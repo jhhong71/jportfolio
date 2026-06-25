@@ -1,0 +1,125 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Box icons CDN */
+@import url('https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css');
+
+/* Default CSS */
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0;
+	background: #010204;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Profile Card */
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.section-inner {
+	width: 1350px;
+}
+.section-inner > img {
+	width: 200px;
+	display: block;
+	margin: auto;
+}
+.section-inner h1 {
+	font-size: 36px;
+	align-items: center;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-underline-offset: 15px;
+	text-decoration-color: #fff;
+	text-shadow: 0 0 10px #EA2228;
+}
+.items {
+	display: flex;
+	gap: 15px;
+	justify-content: space-around;
+	padding: 50px 0;
+}
+.item {
+	width: 250px;
+	height: 350px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	position: relative;
+	transition: 0.35s;
+}
+.item:hover {
+	transform: translateY(-30px);
+}
+.item:hover .caption {
+	bottom: 0;
+	opacity: 1;
+}
+.item img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+.item .caption {
+	position: absolute;
+	bottom: -100px;
+	opacity: 0;
+	left: 0;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 10px;
+	transition: 0.35s;
+}
+.item .caption h2 {
+	margin: 0;
+	font-size: 20px;
+}
+.item .caption h2 span {
+	display: block;
+	color: rgb(255, 187, 0);
+	font-size: 15px;
+}
+.item .caption p {
+	line-height: 1.2em;
+	font-size: 13px;
+}
+.item:nth-child(1) .caption {
+	background: linear-gradient(to top, #E56D35, transparent);
+}
+.item:nth-child(2) .caption {
+	background: linear-gradient(to top, #3a5888, transparent);
+}
+.item:nth-child(3) .caption {
+	background: linear-gradient(to top, rgb(155, 25, 25), transparent);
+}
+.item:nth-child(4) .caption {
+	background: linear-gradient(to top, #a3b643, transparent);
+}
+.item:nth-child(5) .caption {
+	background: linear-gradient(to top, rgb(163, 34, 60), transparent);
+}
+.item:nth-child(6) .caption {
+	background: linear-gradient(to top, #2F6FA2, transparent);
+}
+.item .sns a {
+	padding: 2px 6px;
+}

@@ -1,0 +1,205 @@
+/* ################ Section : Join Us ################ */
+/* Section: Signin-header */
+.joinus {
+	width: 600px;
+	margin: 80px auto;
+}
+.joinus h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+/* Section: Signin-form */
+.signin-form .field {
+	margin: 20px;
+}
+.signin-form .field span {
+	display: block;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+.signin-form .field span em {
+	color: crimson;
+}
+.signin-form .field input[type=text],
+.signin-form .field input[type=email],
+.signin-form .field input[type=password],
+.signin-form .field input[type=date],
+.signin-form .field input[type=date],
+.field.num button {
+	width: 100%;
+	margin-bottom: 8px;
+	border: none;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 8px;
+}
+.signin-form .field input[type=text]:focus,
+.signin-form .field input[type=text]:hover,
+.signin-form .field input[type=email]:focus,
+.signin-form .field input[type=email]:hover,
+.signin-form .field input[type=password]:focus,
+.signin-form .field input[type=password]:hover,
+.signin-form .field input[type=date]:focus,
+.signin-form .field input[type=date]:hover {
+	border: 1px solid black;
+}
+.signin-form .field input[type=date] {
+	color: #777;
+}
+.field.num {
+	margin: 0;
+	display: flex;
+	gap: 8px;
+}
+.field.num input[type=text] {
+	flex: 2;
+}
+.field.num button {
+	flex: 1;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.field.num button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.field.birth {
+	margin: 0;
+	display: flex;
+	gap: 8px;
+}
+.field.birth input[type=date] {
+	flex: 1;
+	padding: 8px;
+}
+.field p,
+.field b {
+	color: rgb(128, 136, 147);
+	font-size: 12px;
+	margin-top: 0;
+}
+.field.agree {
+	border-top: 1px solid #ddd;
+	margin-top: 50px;
+	padding-top: 40px;
+}
+.agree-title {
+	display: inline-block;
+}
+.agree-title span {
+	transform: translateY(3px);
+}
+.agree-title label {
+	display: flex;
+	align-items: center;
+}
+.agree-subtitle {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.agree-subtitle div {
+	display: flex;
+}
+.agree-subtitle div label {
+	margin: 10px 0;
+	display: inline-block;
+}
+.agree-subtitle div label em {
+	color: crimson;
+	font-weight: 400;
+	font-size: 12px;
+}
+.agree-subtitle div label b {
+	font-weight: 400;
+}
+.agree-subtitle div a {
+	flex: 1;
+	color: rgb(128, 136, 147);
+	text-align: right;
+}
+input[id=chk-agree],
+input[id=chkAll] {
+	display: none;
+}
+.agree-title input[id=chkAll] + i,
+.agree-subtitle input[id=chk-agree] + i {
+	background: url('images/icon-chk.png') no-repeat center center;
+	width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+	background-position: left;
+}
+input[id=chkAll]:checked + i,
+input[id=chk-agree]:checked + i {
+	background-position: right;
+}
+.agree-title input[id=chkAll] + i {
+	transform: translateY(-2px);
+}
+.agree-subtitle input[id=chk-agree] + i {
+	transform: translateY(5px);
+}
+.open-content:hover {
+	text-decoration: underline;
+}
+.btn-submit {
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	padding:8px;
+	border-radius: 4px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+/* View-contents */
+.view-contents {
+	background-color: rgba(0, 0, 0, 0.85);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: none;
+}
+.view-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 480px;
+	height: 600px;
+	background-color: #fff;
+	padding: 30px 10px 70px 10px;
+	border-radius: 4px;
+}
+.view-content h1 {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+.view-content iframe {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.close-content {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 26px;
+	height: 26px;
+}
+.close-content:after {
+	content: '\eb96';
+	font-family: remixicon;
+	font-size: 20px;
+}

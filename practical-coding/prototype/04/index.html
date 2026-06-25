@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animaition Indicator</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="indicator">
+    <div class="item active">
+      <i class="bi bi-house-door"></i>
+      <b>home</b>
+    </div>
+    <div class="item">
+      <i class="bi bi-person"></i>
+      <b>profile</b>
+    </div>
+    <div class="item">
+      <i class="bi bi-chat"></i>
+      <b>message</b>
+    </div>
+    <div class="item">
+      <i class="bi bi-question-circle"></i>
+      <b>help</b>
+    </div>
+    <div class="item">
+      <i class="bi bi-gear"></i>
+      <b>settings</b>
+    </div>
+    <span class="focus"></span>
+  </div>
+
+  <script>
+    $('.item').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+    })
+  </script>
+
+</body>
+
+</html>

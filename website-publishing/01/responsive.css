@@ -1,0 +1,328 @@
+@media (max-width: 768px) {
+  body.active {
+    overflow: hidden;
+  }
+  /* Common CSS */
+  .inner {
+    width: 100%;
+  }
+  section.intro,
+  footer > div {
+    padding: 0 20px;
+  }
+  /* ######## Header ######## */
+  .banner {
+    display: none;
+  }
+  .header-inner {
+    width: 100%;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 260px;
+    padding: 80px 20px 20px 20px;
+    line-height: 2em;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    text-align-last: left;
+  }
+  .gnb.active {
+    left: 0;
+  }
+  .gnb .sidebar-gnb-menu a {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    border-bottom: 1px solid #b1aca9;
+    padding: 10px 0 4px 0;
+  }
+  .lnb {
+    display: none;
+  }
+  .sidebar-menu {
+    display: block;
+  }
+  .sidebar-menu input[type=search] {
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 4px;
+  }
+  .search input::-webkit-search-cancel-button {
+    display: none;
+  }
+  .sidebar-menu .search {
+    position: relative;
+  }
+  .sidebar-menu .search i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sidebar-submenu {
+    margin: 4px 0 8px 0;
+    position: relative;
+  }
+  .sidebar-submenu a {
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 8px;
+  }
+  .sidebar-submenu a:after {
+    content: '|';
+    position: absolute;
+    padding-left: 8px;
+    color: #b1aca9
+  }
+  .sidebar-submenu a:first-child {
+    padding-left: 0;
+  }
+  .sidebar-slider {
+    display: block;
+    width: 100%;
+    height: 172px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1000;
+  }
+  .sidebar-slider > div {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+  }
+  .sidebar-slider img {
+    width: 100%;
+  }
+  .slick-dots {
+    bottom: 4px;
+  }
+  /* ######## Fullscreen Login ######## */
+  .fullscreen-login {
+    display: none;
+  }
+  /* ######## Trigger ######## */
+  .trigger {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    width: 24px;
+    height: 14px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .trigger span {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span {
+    background-color: #000;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.74);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* ######## Section: Intro ######## */
+  .intro-inner {
+    flex-direction: column;
+  }
+  .heading h1 {
+    font-size: 38px;
+  }
+  .heading p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  /* ######## Section: Shop ######## */
+  .shop-inner {
+    width: 100%;
+  }
+  .shop-slider div img {
+    width: 100%;
+  }
+  .shop-new-arrival {
+    flex-direction: column;
+  }
+  .arrival-pic img {
+    width: 100%;
+  }
+  .arrival-content {
+    text-align: center;
+  }
+  .arrival-thumbnail {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .shop-slider .slick-dots {
+    top: 110%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .shop-slider-img {
+    width: 100%;
+    height: 100%;
+  }
+  /* ######## Section: benefit ######## */
+  .benefit-inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  .benefit-addkakao,
+  .benefit-membership {
+    flex-direction: column;
+    padding: 14px 0;
+    text-align: center;
+  }
+  .benefit-addkakao .benefit-title,
+  .benefit-membership .benefit-title {
+    text-align: center;
+  }
+  .benefit-membership .benefit-title {
+    order: 2;
+  }
+  .benefit-addkakao .benefit-title p,
+  .benefit-membership .benefit-title p {
+    margin-bottom: 0;
+  }
+  .coupon img {
+    width: 80%;
+  }
+  /* ######## Section: Collection ######## */
+  .collection-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .collection-desc {
+    margin-bottom: 40px;
+  }
+  .collection-item:nth-of-type(1) .collection-desc {
+    order: 2;
+  }
+  .collection-item:nth-of-type(2) .collection-desc {
+    order: 2;
+  }
+  .collection-item:nth-of-type(2) .collection-slider {
+    order: 1;
+  }
+  .collection-item:nth-of-type(3) .collection-desc {
+    order: 2;
+  }
+  .collection-item:nth-of-type(3) .collection-slider {
+    order: 1;
+  }
+  .collection-slider {
+    width: 100%;
+    justify-content: center;
+  }
+  .collection-slider img {
+    width: 100%;
+  }
+  /* ######## Section: Archive-showroom ######## */
+  .archive {
+    flex-direction: column;
+    flex: 1;
+  }
+  .archive-pic {
+    width: 100%;
+    height: 100%;
+  }
+  .archive-desc {
+    padding: 40px 0;
+  }
+  .showroom {
+    flex-direction: column;
+    flex: 1;
+  }
+  .showroom-desc {
+    order: 2;
+    padding: 40px 0;
+  }
+  .showroom-pic {
+    width: 100%;
+    flex: none;
+  }
+  .showroom-subpic {
+    width: 100%;
+    height: 80%;
+    flex: none;
+  }
+  .showroom-subpic img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* ######## Footer ######## */
+  .company-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .company-desc {
+    padding: 0 15px;
+  }
+  .company-desc a {
+    margin: 0 4px 0 0;
+	  padding: 2px;
+    font-size: 14px;
+  }
+  .company-desc a:after {
+    margin: 0 4px;
+  }
+  .copyright-inner {
+    width: 100%;
+    text-align: center;
+  }
+  .copyright p {
+    padding: 0 26px;
+  }
+
+}

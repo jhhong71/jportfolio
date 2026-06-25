@@ -1,0 +1,115 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Box icons CDN */
+@import url('https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset CSS */
+input, button, textarea {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Icon Login Form */
+.login {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 5px;
+}
+.login span {
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.field {
+  position: relative;
+}
+.field .input-icon,
+.field .toggle-pw {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.field .input-icon {
+  left: 10px;
+}
+.field .toggle-pw {
+  right: 10px;
+}
+.msg {
+  display: none;
+}
+.login :is(input[type=email], #user-pw) {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding-left: 40px;
+  transition: 0.35s;
+}
+.login :is(input[type=email], #user-pw):hover,
+.login :is(input[type=email], #user-pw):focus {
+  border: 1px solid #0fa1e0;
+  box-shadow: 0 0 5px #0fa1e0;
+}
+.login :is(input[type=email], #user-pw)::placeholder {
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #999;
+  transition: 0.35s;
+}
+.login :is(input[type=email], input[type=password]):focus::placeholder {
+  opacity: 0;
+}
+.status {
+  margin: 15px 0;
+  overflow: hidden;
+}
+.status label {
+  float: left;
+}
+.status label input[type=checkbox] {
+  vertical-align: middle;
+}
+.status a {
+  float: right;
+}
+.status a:hover {
+  text-decoration: underline;
+}
+.login button {
+  background-color: #0fa1e0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 5px;
+  width: 250px;
+  border-radius: 5px;
+}

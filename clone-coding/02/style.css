@@ -1,0 +1,338 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Xeicon CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  margin: 0;
+}
+body.active {
+  overflow: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.link a {
+	color: #0066CC;
+  font-size: 16px;
+	font-weight: 400;
+	margin: 0 10px;
+}
+.link a:hover {
+	text-decoration: underline;
+}
+.learn-more i {
+	transform: translateY(1px);
+  margin-left: 5px;
+}
+
+/* Apple Branch Landing */
+/* Common CSS */
+.heading {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+.heading h2 {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+.heading p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* Header */
+header {
+	background-color: rgba(0, 0, 0, 0.88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+header nav {
+	width: 1000px;
+	margin: auto;
+}
+.gnb {
+	height: 40px;
+	box-sizing: border-box;
+	text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb a {
+  color: #fff;
+  opacity: 0.8;
+	text-align: center;
+  padding: 8px 20px;
+}
+.gnb > a:not(a:first-child) {
+  font-size: 13px;
+}
+.gnb a:hover {
+  opacity: 1;
+}
+.lnb a {
+  padding: 8px 20px;
+}
+
+/* Section : welcome */
+.welcome-inner {
+  height: 700px;
+  background: #221D3C url('images/welcome-img.png') no-repeat center bottom 50px;
+	background-size: 1000px;
+	position: relative;
+}
+.welcome-inner .heading {
+  width: 600px;
+  top: 80px;
+  line-height: 2.6em;
+  color: #fff;
+}
+.welcome-inner .heading h2 {
+  font-size: 36px;
+}
+.welcome-inner .heading p {
+  font-size: 24px;
+  margin: 0;
+}
+.welcome-inner .heading i {
+  transform: translateY(2px);
+}
+
+/* Section : branch1 */
+.branch-inner {
+  overflow: hidden;
+}
+.branch-inner > div {
+  position: relative;
+  height: 450px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+section.branch1 .branch-inner > div:first-child {
+  background: #e6f0e3 url('images/iphone_13.png') no-repeat center bottom;
+  background-size: 380px;
+}
+section.branch1 .branch-inner > div:last-child {
+  background: #FAFAFA url('images/watch_series_3_large.jpg') no-repeat center bottom 20px;
+}
+section.branch2 .branch-inner > div:first-child {
+  background: #FAFAFA url('images/ipad_pro_large.jpg') no-repeat center bottom 100px;
+  background-size: 400px;
+}
+section.branch2 .branch-inner > div:last-child {
+  background: #F7F7F7 url('images/macbook_large.png') no-repeat center bottom 50px;
+  background-size: 400px;
+}
+section.branch3 .branch-inner > div:first-child {
+  background: #F7F7F7 url('images/apple-card.jpg') no-repeat center center;
+  background-size: cover;
+}
+section.branch3 .branch-inner > div:last-child {
+  background: #FAFAFA url('images/apple-tv-img01.jpg') no-repeat center center;
+  background-size: cover;
+}
+section.branch3 .branch-inner > div:last-child .heading {
+  color: #fff;
+}
+section.branch3 .branch-inner > div:last-child > div {
+  text-align: center;
+  width: 220px;
+}
+section.branch3 .branch-inner > div:last-child img:nth-child(1) {
+  width: 70px;
+}
+section.branch3 .branch-inner > div:last-child img:nth-child(2) {
+  display: block;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+/* Section : accessories */
+section.accessories {
+  padding: 50px 0;
+}
+.accessories-inner {
+  height: 600px;
+  position: relative;
+  background: url('images/accessories_large.jpg') no-repeat center bottom;
+}
+
+/* Section : iphonex-video */
+.iphonex-video-inner {
+  position: relative;
+  height: 400px;
+  background-color: #000;
+  text-align: center;
+}
+.iphonex-video-inner .heading {
+  color: #fff;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.iphonex-video-inner .heading i {
+  transform: translateY(2px);
+  margin-left: 5px;
+}
+.iphonex-video-inner video {
+  height: 400px;
+}
+
+/* Section : macos */
+section.macos {
+  padding: 30px 0;
+}
+.macos-inner {
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.macos-inner div {
+  width: 50%;
+  height: 200px;
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.macos-inner div a {
+  color: #3875D2;
+}
+
+/* Footer */
+footer {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+.footer-inner {
+  width: 1100px;
+  margin: auto;
+}
+.sitemap ul {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: top;
+  width: 17%;
+}
+.sitemap ul:nth-child(3),
+.sitemap ul:nth-child(4) {
+  width: 23%;
+}
+.sitemap ul li {
+  line-height: 2em;
+}
+.sitemap ul li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  font-size: 12px;
+}
+.copyright p {
+  margin: 10px 0;
+}
+.copyright p span {
+  color: #2629D3;
+}
+.copyright p a {
+  font-weight: 400;
+}
+.copyright p a:hover {
+  text-decoration: underline;
+}
+
+/* Fullscreen Search */
+.fullscreen-search {
+  background-color: dimgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 100;
+}
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 600px;
+}
+.search input::-webkit-search-cancel-button {
+  display: none;
+}
+.search input[type=search] {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 46px;
+  color: #aaa;
+  outline: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search input[type=search]::placeholder {
+  font-style: italic;
+  text-align: center;
+  transition: 0.35s;
+}
+.search input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.search button {
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 7px 30px;
+}
+.close-search {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.close-search:before,
+.close-search:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  background-color: #000;
+  top: 50%;
+}
+.close-search:before {
+  transform: rotate(45deg);
+}
+.close-search:after {
+  transform: rotate(-45deg);
+}

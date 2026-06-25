@@ -1,0 +1,159 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Default CSS */
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FFFEF2;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Pure CSS Accordion Image Gallery */
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.gallery li {
+  border-right: 5px solid #000;
+  height: 100vh;
+  transition: 0.5s;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(0.8);
+}
+.gallery li:last-child {
+  border-right: none;
+}
+.gallery li:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -35px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.gallery li:hover {
+  flex: 3;
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+.gallery li:hover:before {
+  top: 0;
+  transition: 0.5s;
+  transition-delay: 0.8s;
+}
+.gallery li:nth-child(1) {
+  background: url('images/bg01.jpg') no-repeat left 20% center;
+  background-size: cover;
+}
+.gallery li:nth-child(2) {
+  background: url('images/bg02.jpg') no-repeat center center;
+  background-size: cover;
+}
+.gallery li:nth-child(3) {
+  background: url('images/bg03.jpg') no-repeat center center;
+  background-size: cover;
+}
+.gallery li:nth-child(4) {
+  background: url('images/bg04.jpg') no-repeat center center;
+  background-size: cover;
+}
+.gallery li:nth-child(5) {
+  background: url('images/bg05.jpg') no-repeat center center;
+  background-size: cover;
+}
+.gallery li .content {
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #FFFEF2;
+  text-align: center;
+  padding: 18px;
+  bottom: -240%;
+  transition: 0.4s;
+}
+.gallery li:nth-of-type(1) .content {
+  background-color: rgba(187, 144, 87, 0.85);
+}
+.gallery li:nth-of-type(2) .content {
+  background-color: rgba(102, 40, 38, 0.85);
+}
+.gallery li:nth-of-type(3) .content {
+  background-color: rgba(53, 62, 44, 0.85);
+}
+.gallery li:nth-of-type(4) .content {
+  background-color: rgba(7, 25, 59, 0.85);
+}
+.gallery li:nth-of-type(5) .content {
+  background-color: rgba(217, 169, 157, 0.85);
+}
+.gallery li:hover .content {
+  bottom: 0;
+  transition-delay: 0.35s;
+}
+.gallery li .content:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -2%;
+  transform: translate(-50%, -16px);
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 17px;
+  border-left-width: 17px;
+}
+.gallery li:nth-of-type(1) .content:before {
+  border-bottom: 20px solid rgba(187, 144, 87, 0.85);
+}
+.gallery li:nth-of-type(2) .content:before {
+  border-bottom: 20px solid rgba(102, 40, 38, 0.85);
+}
+.gallery li:nth-of-type(3) .content:before {
+  border-bottom: 20px solid rgba(53, 62, 44, 0.85);
+}
+.gallery li:nth-of-type(4) .content:before {
+  border-bottom: 20px solid rgba(7, 25, 59, 0.85);
+}
+.gallery li:nth-of-type(5) .content:before {
+  border-bottom: 20px solid rgba(217, 169, 157, 0.85);
+}
+.gallery li .content h2,
+.gallery li .content p, 
+.gallery li .content .more {
+  position: relative;
+}
+.gallery li .content .more a {
+  color: #FFFEF2;
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: transparent;
+  opacity: 0.8;
+}
+.gallery li .content .more a:hover {
+  opacity: 1;
+}
+

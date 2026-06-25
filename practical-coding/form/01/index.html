@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Icon Login Form</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+  <div class="login">
+    <span>email</span>
+    <div class="field">
+      <i class='input-icon bx bx-envelope' ></i>
+      <input type="email" placeholder="email address">
+    </div>
+    <span>password</span>
+    <div class="field">
+      <i class='input-icon bx bx-lock-alt' ></i>
+      <input id="user-pw" type="password" placeholder="password">
+      <i class='toggle-pw bx bx-hide'></i>
+    </div>
+    <p class="msg">영문 대소문자/숫자/특수 문자 3가지 필수조합</p>
+    <div class="status">
+      <label><input type="checkbox">Keep me logged in</label>
+      <a href="#none">forgot your password?</a>
+    </div>
+    <button>log in</button>
+  </div>
+  
+  <script>
+    $('.toggle-pw').click(function(){
+      let inputType = $('#user-pw').attr('type')
+      // alert(inputType)
+      if(inputType == 'password') {
+        $('#user-pw').attr('type', 'text')
+        $(this).addClass('bx-show').css('color','#0FA1E0')
+        $(this).siblings('.input-icon').css('color','#0FA1E0')
+      }
+      else {
+        $('#user-pw').attr('type', 'password')
+        $(this).removeClass('bx-show').css('color','')
+      }
+    })
+
+    $('#user-pw').focus(function(){
+      $('#user-pw').parent('.field').siblings('.msg').show()
+    })
+    $('#user-pw').blur(function(){
+      $('#user-pw').parent('.field').siblings('.msg').hide()
+    })
+  </script>
+    
+</body>
+</html>

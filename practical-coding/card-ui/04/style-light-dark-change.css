@@ -1,0 +1,202 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  background: url('images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+body.dark {
+  background: url('images/bg-darkmode.jpg') no-repeat center center;
+  background-size: cover;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Profile Card Dark Mode */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.profile {
+  width: 320px;
+  padding: 50px 30px;
+  background-color: #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 40px;
+  transition: 0.5s;
+}
+.face {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  position: relative;
+}
+.face img {
+  width: 100%;
+  border-radius: 50%;
+}
+.face i {
+  position: absolute;
+  font-size: 20px;
+  background-color: #2084FC;
+  border-radius: 50%;
+  color: #fff;
+  right: -1px;
+  bottom: 10px;
+}
+.profile h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.profile h1 span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(126, 126, 126);
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.profile p {
+  margin: 0 0 20px 0;
+}
+.profile p span {
+  display: block;
+  color: royalblue;
+}
+.view-portfolio {
+  color: #fff;
+  padding: 5px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  width: 180px;
+  display: inline-block;
+  background-color: #000;
+  border: 1px solid transparent;
+  transition: 0.35s;
+}
+.view-portfolio:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #222;
+}
+.sns {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+}
+.sns div {
+  flex: 1;
+}
+.sns div i {
+  width: 50px;
+  height: 50px;
+  font-size: 1.6em;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+.sns div:nth-child(1) i {
+  background-image: linear-gradient(to bottom, #cc208e 0%, #6713d2 100%);
+}
+.sns div:nth-child(2) i {
+  background-image: linear-gradient(to bottom, #0acffe 0%, #495aff 100%);
+}
+.sns div:nth-child(3) i {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+.sns div span {
+  display: block;
+}
+.sns div span b {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.btn-mode {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.btn-mode:before {
+  content: '\F494';
+  font-family: bootstrap-icons;
+}
+.btn-like {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font-size: 14px;
+}
+.btn-like:before {
+  content: '\F417';
+  font-family: bootstrap-icons;
+}
+.btn-like.active:before {
+  content: '\F415';
+  font-family: bootstrap-icons;
+}
+.like-more {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 18px;
+}
+.btn-mode,
+.btn-like,
+.btn-more {
+  cursor: pointer;
+}
+/* Dark Mode CSS */
+.profile.dark {
+  background-color: #1B1E27;
+  box-shadow: 0 15px 20px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.profile.dark .sns {
+  border-top: 1px solid #999;
+}
+.profile.dark .btn-mode:before {
+  content: '\F1D2';
+  font-family: bootstrap-icons;
+}
+.profile.dark .view-portfolio {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #222;
+}
+.profile.dark .view-portfolio:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid transparent;
+}

@@ -1,0 +1,108 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4em;
+  background: url('bg-summer.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset CSS */
+input, select, button, textarea {
+  outline: none;
+}
+
+/* Summer Class Apply */
+.application {
+  background-color: #fff;
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  padding: 25px;
+  box-sizing: border-box;
+}
+.application h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+fieldset legend {
+  background-color: #3D66E0;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.field {
+  margin: 7px 0;
+  display: flex;
+}
+.field span {
+  flex: 1;
+  margin-right: 5px;
+}
+.field input[type=text]:read-only {
+  background: transparent;
+  width: 110px;
+  border: 1px solid #ddd;
+  color: #bbb;
+}
+.field input[type=text],
+.field input[type=email],
+.field input[type=password],
+.field select,
+.field textarea {
+  border: 1px solid #999;
+  padding: 3px;
+  border-radius: 3px;
+  flex: 3;
+}
+.field div {
+  flex: 3;
+}
+.field textarea {
+  height: 100px;
+  resize: none;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #bbb;
+}
+.field input:focus,
+.field textarea:focus {
+  background-color: rgb(240, 240, 240);
+}
+input[type=password]:focus::placeholder,
+.field textarea:focus::placeholder {
+  opacity: 0;
+}
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons button {
+  cursor: pointer;
+  background: #00BFFF;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.buttons button:last-child {
+  background-color: #AAAAAA;
+}

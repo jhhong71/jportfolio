@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode Change Prototype</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="images/logo.png">
+      </div>
+      <div class="gnb">
+        <a href="#none">Home</a>
+        <a href="#none">Menu</a>
+        <a href="#none">What's New</a>
+        <a href="#none">Contact</a>
+        <a href="#none" class="darkmode"></a>
+      </div>
+    </header>
+    <section>
+      <div class="content">
+        <div class="content-detail">
+          <h1>It’s our largest display yet.<br> The most durable <span>PANERAI </span>ever built.</h1>
+          <p>
+            This professional diving watch, limited edition of only 19 pieces, is available at the Panerai boutique. The caseback is engraved with Mike Horn's signature and a marine life commemorating Panerai's beloved ocean. Crafted using an innovative production process to protect the planet, the case, crown protector, bezel and caseback of this unique timepiece are made of ECOTITANIUM™, and the lightweight and durable bracelet is made of recycled plastic.
+          </p>
+          <a href="#none">Learn More</a>
+        </div>
+        <div class="content-item">
+          <img src="images/item.png">
+          <img src="images/item-1.png">
+        </div>
+      </div>
+      <div class="sns">
+        <a href="#none"><i class="bi bi-youtube"></i></a>
+        <a href="#none"><i class="bi bi-twitter"></i></a>
+        <a href="#none"><i class="bi bi-instagram"></i></a>
+      </div>
+    </section>
+    
+  </div>
+
+  <script>
+    $('.darkmode').click(function(){
+      $('body').toggleClass('dark')
+    })
+  </script>
+  
+</body>
+</html>

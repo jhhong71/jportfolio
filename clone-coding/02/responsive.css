@@ -1,0 +1,147 @@
+@media (max-width: 767px) {  
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.35s;
+}
+header.active {
+  left: 0;
+}
+header nav {
+  width: 100%;
+  margin-top: 60px;
+  padding: 0 30px;
+}
+.gnb {
+  flex-direction: column;
+}
+.gnb a {
+  color: #000;
+  width: 100%;
+  text-align: left;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+.lnb {
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+}
+.lnb a {
+  border: none;
+  padding: 10px;
+}
+.trigger {
+  display: block;
+  width: 25px;
+  height: 15px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+.trigger span {
+  position: absolute;
+  background-color: rgb(184, 184, 184);
+  width: 100%;
+  height: 1%;
+  transition: 0.35s;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+.trigger.active span {
+ background-color: #000;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* Section : welcome */
+.welcome-inner {
+  background-position: center 380px;
+  background-size: 360px;
+  height: 100vh;
+}
+.welcome-inner .heading {
+  width: 100%;
+  line-height: 2.8em;
+}
+.heading {
+  width: 300px;
+}
+
+/* Section : branch */
+.branch-inner > div {
+  float: none;
+  width: 100%;
+  height: 50vh;
+}
+section.branch1 .branch-inner > div:first-child,
+section.branch1 .branch-inner > div:last-child,
+section.branch2 .branch-inner > div:first-child,
+section.branch2 .branch-inner > div:last-child {
+  background-size: 80%;
+  background-position: bottom;
+}
+/* Section : accessories */
+.accessories-inner {
+  background-size: 100%;
+  background-position: center;
+}
+
+/* Section : macos */
+.macos-inner {
+  width: 100%;
+}
+.macos-inner div {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.iphonex-video-inner video {
+  width: 100%;
+}
+
+/* Footer */
+.footer-inner {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.sitemap {
+  display: none;
+}
+
+/* Fullscreen Search */
+.fullscreen-search,
+.search {
+  width: 100%;
+}
+.search input[type=search] {
+  font-size: 30px;
+}
+
+}

@@ -1,0 +1,94 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  position: relative;
+}
+.heading * {
+  transition: 0.35s;
+}
+.heading:hover em:first-of-type:before {
+  width: 100%;
+}
+.heading:hover em:first-of-type:after {
+  height: 100%;
+}
+.heading:hover em:last-of-type:before {
+  width: 100%;
+}
+.heading:hover em:last-of-type:after {
+  height: 100%;
+}
+.heading em {
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  left: -10px;
+  top: -10px;
+}
+.heading em:before, .heading em:after {
+  transition: 0.35s;
+}
+.heading em:first-of-type:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 1px;
+  background-color: #FEDC00;
+}
+.heading em:first-of-type:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background-color: #FEDC00;
+}
+.heading em:last-of-type:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #FEDC00;
+}
+.heading em:last-of-type:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 0;
+  background-color: #FEDC00;
+}
+.heading h1 {
+  background-color: #FEDC00;
+  padding: 10px 30px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.heading h1 span {
+  margin-bottom: 4px;
+  color: #000;
+  font-size: 24px;
+  display: block;
+  font-weight: 500;
+  font-family: "Titan One", cursive;
+}
+.heading h1:hover {
+  background-color: yellowgreen;
+}

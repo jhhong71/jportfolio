@@ -1,0 +1,157 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* Default CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Nonfiction */
+.feature {
+  width: 1000px;
+  margin: auto;
+  margin-top: 90px;
+}
+.feature-outer > img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.feature-inner {
+  position: relative;
+  height: 600px;
+}
+.feature-inner h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 14px;
+}
+.feature-inner input[type=search] {
+  position: absolute;
+  right: 0;
+  background: url('images/search.svg') no-repeat center left 10px;
+  border-radius: 3px;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 8px 8px 40px;
+  border: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.37);
+  outline: none;
+  transition: 0.5s;
+}
+.feature-inner input[type=search]:hover {
+  box-shadow: 0 0 3px rgba(2, 70, 68, 0.46);
+}
+.feature-inner input[type=search]::placeholder {
+  transition: 0.5s;
+}
+.feature-inner input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.feature-tabs {
+  position: absolute;
+  padding: 24px;
+  margin-top: 30px;
+}
+.btn {
+  cursor: pointer;
+}
+.btn span {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: -4px;
+  display: inline-block;
+  text-align: center;
+  width: 134px;
+  padding: 6px;
+  transition: 0.5s;
+  font-size: 13px;
+}
+.btn span.active {
+  border: 1px solid #024644;
+  background-color: #024644;
+  color: #fff;
+}
+.items {
+  background: #f5f5f5;
+  height: 476px;
+}
+.items .item {
+  overflow: hidden;
+  display: none;
+}
+.items .item > div {
+  float: left;
+}
+.items .item.active {
+  display: block;
+}
+.product-pic {
+  width: 50%;
+}
+.product-pic img {
+  width: 100%;
+}
+.product-content {
+  width: 50%;
+  height: 360px;
+  text-align: center;
+  padding: 30px 40px;
+  position: relative;
+}
+.product-content p {
+  margin: 30px 0;
+  line-height: 1.6em;
+  text-align: left;
+}
+.shopping-cart {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+.shopping-cart select {
+  width: 200px;
+  padding: 6px;
+}
+.shopping-cart a {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  margin-top: 10px;
+  width: 200px;
+  padding: 6px;
+  font-size: 13px;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.shopping-cart a:hover {
+  opacity: 1;
+}
+.shopping-cart a span { 
+  padding: 0 10px;
+}
+.shopping-cart a span:first-child {
+  float: left;
+}
+.product-content a span:last-child {
+  float: right; 
+}

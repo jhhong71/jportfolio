@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J's Front-end Publisher — Portfolio</title>
+  <meta name="description" content="기획자, 디자이너, 개발자와의 협업 경험을 바탕으로 원활한 소통이 가능한 프론트엔드 퍼블리셔 — 포트폴리오.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style id="__figma_flat">
+    .reveal{opacity:1!important;transform:none!important}
+    .cases-pin{height:auto!important}
+    .cases-pin__sticky{position:static!important;height:auto!important;padding-block:3rem!important}
+    #casesTrack{transform:none!important;flex-direction:column!important;height:auto!important;gap:24px!important;align-items:center!important}
+    .cases-pin__dots{display:none!important}
+    .ent-swiper .swiper-wrapper,.clone-swiper .swiper-wrapper{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.25rem!important;transform:none!important}
+    .ent-swiper .swiper-slide,.clone-swiper .swiper-slide{width:auto!important}
+    .ent-controls,.clone-controls{display:none!important}
+    .thumb-group{display:block!important;margin-bottom:2rem}
+    .filter-tabs .swiper-wrapper{flex-wrap:wrap!important;transform:none!important;height:auto!important}
+    .hero-video-wrap{display:none!important}
+  </style>
+</head>
+<body>
+
+  <template id="__bundler_thumbnail" data-bg-color="#05050d">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#05050d"></rect>
+      <text x="600" y="430" font-family="Sora, sans-serif" font-size="240" font-weight="700" fill="#b07bf0" text-anchor="middle">J</text>
+      <text x="600" y="600" font-family="Sora, sans-serif" font-size="54" font-weight="600" fill="#f3eaff" text-anchor="middle" letter-spacing="4">PORTFOLIO</text>
+    </svg>
+  </template>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="#top" aria-label="J's Portfolio home">
+        <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="vmark" x1="4" y1="4" x2="36" y2="36">
+              <stop offset="0" stop-color="oklch(0.80 0.16 300)"></stop>
+              <stop offset="1" stop-color="oklch(0.55 0.24 296)"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="2.6" y="2.6" width="34.8" height="34.8" rx="11.5" fill="oklch(0.14 0.02 290)" stroke="url(#vmark)" stroke-width="1.7"></rect>
+          <path d="M25 11.5 L25 23.4 a5.4 5.4 0 0 1 -10.8 0" stroke="oklch(0.96 0.02 300)" stroke-width="1.7" stroke-linecap="round" fill="none"></path>
+        </svg>
+        <span>J's<span style="color:var(--voxr-purple-300)">&nbsp;Portfolio</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#enterprise">Projects</a></li>
+          <li><a href="#playground">Playground</a></li>
+          <li><a href="#graphic">Graphic</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn--ghost" href="https://github.com/jhhong71" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--solid" href="#contact">Contact <span class="btn__icon" aria-hidden="true">→</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#skills">Skills</a>
+      <a href="#enterprise">Projects</a>
+      <a href="#playground">Playground</a>
+      <a href="#graphic">Graphic</a>
+      <a class="btn btn--solid" href="#contact">Contact <span class="btn__icon" aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" data-screen-label="Hero">
+      <div class="hero__aurora" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow reveal is-visible">● Standard &amp; Accessibility · Front-end Publisher</span>
+          <h1 class="hero__title kr reveal is-visible" data-delay="1">기획자, 디자이너, 개발자와의
+협업 경험을 바탕으로 원활한 소통이 가능한&nbsp; 프론트엔드 퍼블리셔!</h1>
+          <p class="hero__sub kr reveal is-visible" data-delay="2">
+            문제를 스스로 정의하고 해결하며 프로젝트를 주도적으로 끌고 갑니다.
+            기획–디자인–개발 흐름을 이해하고, 유지보수성을 고려한 클린 코드로
+            13개 이상의 기업 프로젝트를 함께해 왔습니다.
+          </p>
+          <div class="hero__roles reveal is-visible" data-delay="3">
+            <span>웹 표준 · 접근성</span>
+            <span>Vue · React</span>
+            <span>반응형 퍼블리싱</span>
+            <span>협업 · 소통</span>
+          </div>
+          <div class="hero__cta reveal is-visible" data-delay="3">
+            <a class="btn btn--primary" href="#enterprise">프로젝트 보기 <span class="btn__icon" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#contact">연락하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="skills" data-screen-label="Skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Skills</span>
+          <h2 class="reveal" data-delay="1">소통으로 완성하는 <span class="gradient-text">프론트엔드</span></h2>
+          <p class="reveal kr" data-delay="2">웹 표준과 접근성을 기반으로, 퍼블리싱부터 컴포넌트 설계까지 실무에서 검증된 기술 스택입니다.</p>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card reveal" data-delay="1">
+            <div class="feature-card__glyph">H</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>HTML5</h3>
+              <p class="kr">웹 표준과 접근성을 준수한 <span class="hl">마크업 작성</span> 능력을 보유하고 있으며, Vue 템플릿 구조와 결합한 컴포넌트 기반 레이아웃 설계 경험이 있습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart" viewBox="0 0 220 64" preserveAspectRatio="none" fill="currentColor">
+                  <rect class="card-bar" x="8" y="0" width="16" height="64" rx="3" style="--h:.45"></rect>
+                  <rect class="card-bar" x="34" y="0" width="16" height="64" rx="3" style="--h:.62"></rect>
+                  <rect class="card-bar" x="60" y="0" width="16" height="64" rx="3" style="--h:.5"></rect>
+                  <rect class="card-bar" x="86" y="0" width="16" height="64" rx="3" style="--h:.78"></rect>
+                  <rect class="card-bar" x="112" y="0" width="16" height="64" rx="3" style="--h:.66"></rect>
+                  <rect class="card-bar" x="138" y="0" width="16" height="64" rx="3" style="--h:.88"></rect>
+                  <rect class="card-bar" x="164" y="0" width="16" height="64" rx="3" style="--h:.74"></rect>
+                  <rect class="card-bar" x="190" y="0" width="16" height="64" rx="3" style="--h:.96"></rect>
+                </svg>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="2">
+            <div class="feature-card__glyph">C</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>CSS3 / SCSS</h3>
+              <p class="kr">vw, rem 등 상대 단위를 활용한 <span class="hl">반응형 퍼블리싱</span> 경험이 있습니다. Vue 프로젝트에서는 SCSS로 변수·믹스인·모듈화를 적용해 스타일 구조를 관리했습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--area" viewBox="0 0 220 64" fill="none" preserveAspectRatio="none">
+                  <defs><linearGradient id="g_css" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".3"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs>
+                  <path class="carea" d="M0 50 L44 42 L88 46 L132 28 L176 22 L220 12 L220 64 L0 64 Z" fill="url(#g_css)"></path>
+                  <path class="cdraw" pathLength="1" d="M0 50 L44 42 L88 46 L132 28 L176 22 L220 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="chart-dot" style="top: 12px"></span>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="3">
+            <div class="feature-card__glyph">JS</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>JavaScript</h3>
+              <p class="kr"><span class="hl">UI 인터랙션, 이벤트 처리, 동적 데이터 렌더링</span> 등 퍼블리싱 과정에서 필요한 수준의 JavaScript 기능을 구현할 수 있습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--graph" viewBox="0 0 220 64" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <path class="cdraw" pathLength="1" d="M16 32H74" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  <path class="cdraw d1" pathLength="1" d="M74 32C112 32 116 14 152 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  <path class="cdraw d2" pathLength="1" d="M74 32H152" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  <path class="cdraw d3" pathLength="1" d="M74 32C112 32 116 50 152 50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  <circle cx="16" cy="32" r="5" fill="currentColor"></circle>
+                  <circle class="cnode" cx="158" cy="14" r="5"></circle><circle class="cnode" cx="158" cy="32" r="5"></circle><circle class="cnode" cx="158" cy="50" r="5"></circle>
+                </svg>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="1">
+            <div class="feature-card__glyph">W</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>Web Accessibility</h3>
+              <p class="kr">전기안전인재개발원 프로젝트에서 매년 <span class="hl">웹접근성 인증마크 갱신</span>을 직접 수행했습니다. WCAG/KWCAG에 따라 시맨틱 마크업, 대체 텍스트, 폼 라벨, 키보드 네비게이션을 적용합니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--cal" viewBox="0 0 220 64" fill="currentColor">
+                  <rect class="cal-cell" x="8" y="6" width="24" height="24" rx="5"></rect>
+                  <rect class="cal-cell book" x="42" y="6" width="24" height="24" rx="5" style="--d:.05s"></rect>
+                  <rect class="cal-cell" x="76" y="6" width="24" height="24" rx="5"></rect>
+                  <rect class="cal-cell book" x="110" y="6" width="24" height="24" rx="5" style="--d:.18s"></rect>
+                  <rect class="cal-cell" x="144" y="6" width="24" height="24" rx="5"></rect>
+                  <rect class="cal-cell book" x="178" y="6" width="24" height="24" rx="5" style="--d:.3s"></rect>
+                  <rect class="cal-cell book" x="8" y="34" width="24" height="24" rx="5" style="--d:.12s"></rect>
+                  <rect class="cal-cell" x="42" y="34" width="24" height="24" rx="5"></rect>
+                  <rect class="cal-cell book" x="76" y="34" width="24" height="24" rx="5" style="--d:.24s"></rect>
+                  <rect class="cal-cell" x="110" y="34" width="24" height="24" rx="5"></rect>
+                  <rect class="cal-cell book" x="144" y="34" width="24" height="24" rx="5" style="--d:.36s"></rect>
+                  <rect class="cal-cell" x="178" y="34" width="24" height="24" rx="5"></rect>
+                </svg>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="2">
+            <div class="feature-card__glyph">V</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>Vue.js</h3>
+              <p class="kr"><span class="hl">Vuetify와 AG-Grid</span> 기반으로 실제 서비스 화면을 퍼블리싱·구현했습니다. 컴포넌트 단위로 화면을 구성하고 백엔드와 협업하며 Vue 프로젝트 구조 안에서 작업했습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--donut" viewBox="0 0 220 64" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <g transform="rotate(-90 44 32)">
+                    <circle cx="44" cy="32" r="22" stroke="currentColor" stroke-opacity="0.15" stroke-width="7"></circle>
+                    <circle class="cdonut" cx="44" cy="32" r="22" stroke="currentColor" stroke-width="7" stroke-linecap="round" pathLength="100" style="--p:82; --d:0.05s; stroke-dashoffset:18"></circle>
+                  </g>
+                  <g transform="rotate(-90 110 32)">
+                    <circle cx="110" cy="32" r="22" stroke="currentColor" stroke-opacity="0.15" stroke-width="7"></circle>
+                    <circle class="cdonut" cx="110" cy="32" r="22" stroke="currentColor" stroke-width="7" stroke-linecap="round" pathLength="100" style="--p:64; --d:0.18s; stroke-dashoffset:36"></circle>
+                  </g>
+                  <g transform="rotate(-90 176 32)">
+                    <circle cx="176" cy="32" r="22" stroke="currentColor" stroke-opacity="0.15" stroke-width="7"></circle>
+                    <circle class="cdonut" cx="176" cy="32" r="22" stroke="currentColor" stroke-width="7" stroke-linecap="round" pathLength="100" style="--p:91; --d:0.31s; stroke-dashoffset:9"></circle>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="3">
+            <div class="feature-card__glyph">R</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>React.js</h3>
+              <p class="kr"><span class="hl">React와 Storybook</span>으로 공통 컴포넌트를 구축해 프로젝트별 UI 요구사항을 일관되게 적용했습니다. 반복 요소를 컴포넌트화·문서화해 재사용성과 유지보수성을 높였습니다.</p>
+              <a class="feature-card__link" href="https://my-markup-guide.vercel.app/" target="_blank" rel="noopener">예시 작업물</a>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="1">
+            <div class="feature-card__glyph">F</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>UI Frameworks</h3>
+              <p class="kr"><span class="hl">Kendo UI, AG Grid, Vuetify, Mobiscroll, Swiper, Slick</span> 등 다양한 컴포넌트 라이브러리로 차트·그리드·스케쥴러·슬라이드 같은 복합 UI를 요구사항에 맞게 커스터마이징했습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--area" viewBox="0 0 220 64" fill="none" preserveAspectRatio="none">
+                  <defs><linearGradient id="g_ui" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".28"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs>
+                  <path class="carea" d="M0 20 L44 28 L88 22 L132 36 L176 30 L220 44 L220 64 L0 64 Z" fill="url(#g_ui)"></path>
+                  <path class="cdraw" pathLength="1" d="M0 20 L44 28 L88 22 L132 36 L176 30 L220 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="chart-dot" style="top: 44px"></span>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="2">
+            <div class="feature-card__glyph">G</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>Git</h3>
+              <p class="kr"><span class="hl">브랜치 전략, Pull Request 리뷰, Merge</span> 협업을 경험했습니다. 퍼블리싱 및 프론트엔드 코드를 GitHub로 관리하고 개발자들과 버전 관리를 진행했습니다.</p>
+              <a class="feature-card__link feature-card__link--gh" href="https://jhhong71.github.io/componentguide/v1/admin/index.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 6.84 9.5c.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2Z"></path></svg>데모 코드</a>
+            </div>
+          </article>
+          <article class="feature-card reveal" data-delay="3">
+            <div class="feature-card__glyph">Fg</div>
+            <div class="feature-card__body">
+              <div class="feature-card__line"></div>
+              <h3>Figma</h3>
+              <p class="kr"><span class="hl">오토 레이아웃(Auto Layout)</span>의 구조와 동작 원리를 이해하고, 디자인 시안을 정확히 해석해 퍼블리싱에 반영합니다. 컴포넌트·베리언트 개념을 바탕으로 <span class="hl">간단한 컴포넌트 작업</span>도 직접 수행할 수 있습니다.</p>
+              <div class="feature-card__chart" aria-hidden="true">
+                <svg class="card-chart card-chart--cal" viewBox="0 0 220 64" fill="currentColor">
+                  <rect class="cal-cell book" x="8" y="6" width="60" height="24" rx="6" style="--d:.04s"></rect>
+                  <rect class="cal-cell book" x="76" y="6" width="36" height="24" rx="6" style="--d:.14s"></rect>
+                  <rect class="cal-cell" x="120" y="6" width="92" height="24" rx="6"></rect>
+                  <rect class="cal-cell book" x="8" y="34" width="40" height="24" rx="6" style="--d:.22s"></rect>
+                  <rect class="cal-cell" x="56" y="34" width="72" height="24" rx="6"></rect>
+                  <rect class="cal-cell book" x="136" y="34" width="76" height="24" rx="6" style="--d:.32s"></rect>
+                </svg>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light quantified" data-screen-label="Impact">
+      <div class="container">
+        <span class="eyebrow reveal">By the Numbers</span>
+        <p class="quantified__lead reveal kr" data-delay="1">함께 만든 결과,</p>
+        <div class="quantified__display reveal" data-delay="2">Quantified</div>
+      </div>
+      <div class="container">
+        <div class="stat-cards" id="statCards">
+          <div class="stat-card reveal" data-delay="1">
+            <div class="stat-card__value">4년+</div>
+            <p class="stat-card__label kr">프론트엔드 퍼블리싱 및 화면 개발 실무 경력.</p>
+          </div>
+          <div class="stat-card reveal" data-delay="2">
+            <div class="stat-card__value">13+</div>
+            <p class="stat-card__label kr">교육·공공·기업 시스템 등 참여한 엔터프라이즈 프로젝트.</p>
+          </div>
+          <div class="stat-card reveal" data-delay="3">
+            <div class="stat-card__value">100%</div>
+            <p class="stat-card__label kr">다수 프로젝트를 단독으로 주도해 끝까지 책임진 기여도.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark howto" id="approach" data-screen-label="Approach">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">How I Work</span>
+          <h2 class="reveal" data-delay="1">기능정의서에서<br><span class="gradient-text">유지보수까지</span></h2>
+          <p class="reveal kr" data-delay="2">와이어프레임을 코드에 그대로 녹여내는 체계적인 퍼블리싱. 협업을 위한 클린 코드를 원칙으로 합니다.</p>
+        </div>
+        <div class="howto__chain reveal" aria-hidden="true"></div>
+        <div class="steps steps--four">
+          <article class="step-card reveal" data-delay="1">
+            <span class="step-card__num">01</span>
+            <h3>기획 분석</h3>
+            <p class="kr">개발 전 항상 "Why?"를 묻습니다. 기획 의도를 명확히 파악해 불필요한 작업 공수를 줄이고 사용자 관점에서 기능을 정의합니다.</p>
+          </article>
+          <article class="step-card reveal" data-delay="2">
+            <span class="step-card__num">02</span>
+            <h3>구조 설계</h3>
+            <p class="kr">기능정의서를 바탕으로 와이어프레임을 설계하고, 이를 고려한 체계적인 HTML 구조설계와 컴포넌트 단위 분리를 진행합니다.</p>
+          </article>
+          <article class="step-card reveal" data-delay="3">
+            <span class="step-card__num">03</span>
+            <h3>협업 퍼블리싱</h3>
+            <p class="kr">인덴트·주석으로 가독성을 높여 협업을 고려해 작업합니다. 직군 간 언어 차이를 조율하며 기획–디자인–개발 흐름을 잇습니다.</p>
+          </article>
+          <article class="step-card reveal" data-delay="3">
+            <span class="step-card__num">04</span>
+            <h3>유지보수</h3>
+            <p class="kr">공통 패턴 분리·코드 규칙 통일·재사용성 중심 구조화로 운영 단계의 수정 비용을 최소화하는 클린 코드를 작성합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="enterprise" data-screen-label="Enterprise Publishing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Enterprise Publishing</span>
+          <h2 class="reveal" data-delay="1">실무에서 증명한 <br><span class="gradient-text">13개 프로젝트</span></h2>
+          <p class="reveal kr" data-delay="2">교육·공공·기업 시스템을 Vue, JSP, Kendo UI 등으로 퍼블리싱하고 <br>프론트엔드를 구현했습니다.</p>
+        </div>
+        <div class="nda reveal" data-delay="1">
+          <span class="nda__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </span>
+          <p class="kr"><strong>포트폴리오 열람 안내 (Security &amp; NDA)</strong><br>아래 프로젝트들은 기업 내부 시스템으로, 보안 서약(NDA)에 따라 실제 운영 사이트 링크 및 원본 소스 공개가 불가능합니다. 대신 핵심 기능을 동일한 기술 스택으로 재구현한 <strong>Sanitized Demo(클린 버전)</strong> 및 <strong>GitHub 리포지토리</strong>를 제공합니다.</p>
+        </div>
+        <div class="ent-swiper">
+          <div class="swiper-wrapper" id="enterpriseGrid">
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-01.jpg" alt="SGA 데이터연계시스템"><span class="proj-card__contrib">100% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">SGA 데이터연계시스템</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">Vue.js 기반 화면 퍼블리싱</span></li><li><b>작업</b><span class="kr">폐쇄망 내에서 Vuetify · ag-Grid 활용 UI 구현</span></li></ul><div class="proj-card__stack"><span>Vue.js</span><span>Vuetify</span><span>ag-Grid</span></div><div class="proj-card__links"><a class="proj-link" href="https://github.com/jhhong71/lms-admin-project" target="_blank" rel="noopener">GitHub</a><a class="proj-link proj-link--solid" href="https://lms-admin-project.vercel.app/" target="_blank" rel="noopener">Live Demo</a></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-02.jpg" alt="서울사립초등학교"><span class="proj-card__contrib">100% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">서울사립초등학교</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">화면 퍼블리싱 및 프론트엔드 개발</span></li><li><b>작업</b><span class="kr">회원가입 및 입학 신청 시스템 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div><div class="proj-card__links"><a class="proj-link" href="https://github.com/jhhong71/student-admission-system" target="_blank" rel="noopener">GitHub</a><a class="proj-link proj-link--solid" href="https://student-admission-system-snowy.vercel.app/" target="_blank" rel="noopener">Live Demo</a></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-03.jpg" alt="에듀퓨어 LMS 시스템"><span class="proj-card__contrib">80% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">에듀퓨어 LMS 시스템</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">LMS 화면 퍼블리싱 및 유지보수</span></li><li><b>작업</b><span class="kr">강의 영상 플레이어 UI 커스터마이징 및 진도율 연동</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>MediaElement</span><span>Kendo UI</span></div><div class="proj-card__links"><a class="proj-link proj-link--solid" href="https://custom-player-ui.vercel.app/" target="_blank" rel="noopener">Live Demo</a></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-04.jpg" alt="전기안전인재개발원"><span class="proj-card__contrib">30% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">전기안전인재개발원</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">웹접근성 인증마크 갱신</span></li><li><b>작업</b><span class="kr">웹접근성 기준 점검 및 개선 반영</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>slick-slider</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-05.jpg" alt="교원대학교"><span class="proj-card__contrib">90% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">교원대학교</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">화면 퍼블리싱 및 프론트엔드 개발</span></li><li><b>작업</b><span class="kr">교육 시스템 UI 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-06.jpg" alt="KMA 하계 최고경영자 세미나 신청"><span class="proj-card__contrib">100% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">KMA 하계 최고경영자 세미나 신청</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">사용자 · 관리자 화면 퍼블리싱 및 프론트엔드</span></li><li><b>작업</b><span class="kr">교육 · 숙박 · 항공 · 렌터카 · 골프 예약 시스템 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-07.jpg" alt="대한산업안전협회"><span class="proj-card__contrib">30% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">대한산업안전협회</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">유지보수 및 추가기능 개발</span></li><li><b>작업</b><span class="kr">수료증 출력 · PDF 다운로드 및 리스트 UI 개선</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-08.jpg" alt="KMA 공개교육"><span class="proj-card__contrib">80% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">KMA 공개교육</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">홈페이지 리뉴얼 퍼블리싱 및 프론트엔드</span></li><li><b>작업</b><span class="kr">메인 리뉴얼 및 학습 캘린더 기능 구현 (Mobiscroll)</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>swiper</span><span>Mobiscroll</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-09.jpg" alt="KMA HUB"><span class="proj-card__contrib">80% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">KMA HUB</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">홈페이지 리뉴얼 퍼블리싱</span></li><li><b>작업</b><span class="kr">인터랙션 애니메이션 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>GSAP</span><span>AOS</span><span>CountUp</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-10.jpg" alt="서울특별시교육청 교육연수원"><span class="proj-card__contrib">80% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">서울특별시교육청 교육연수원</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">고도화 퍼블리싱 및 프론트엔드</span></li><li><b>작업</b><span class="kr">Kendo Chart 기반 데이터 시각화 화면 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-11.jpg" alt="한국산업기술보호협회"><span class="proj-card__contrib">80% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">한국산업기술보호협회</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">화면 퍼블리싱 및 유지보수</span></li><li><b>작업</b><span class="kr">디자인 변경 사항 반영</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-12.jpg" alt="경운대학교"><span class="proj-card__contrib">100% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">경운대학교</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">화면 퍼블리싱 및 프론트엔드 개발</span></li><li><b>작업</b><span class="kr">다국어(한국어 · 베트남어) 지원 및 채용공고 기능 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/enterprise-13.jpg" alt="현대NGV"><span class="proj-card__contrib">100% 기여</span></div><div class="proj-card__body"><h3 class="proj-card__title">현대NGV</h3><ul class="proj-card__meta"><li><b>담당</b><span class="kr">화면 퍼블리싱 및 프론트엔드</span></li><li><b>작업</b><span class="kr">내부 시스템 UI 구현</span></li></ul><div class="proj-card__stack"><span>JSP</span><span>jQuery</span><span>Kendo UI</span></div></div></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases-pin section--dark" id="website" data-screen-label="Website Publishing">
+      <div class="cases-pin__sticky">
+        <div class="cases-pin__track" id="casesTrack">
+          <div class="cases-pin__intro">
+            <span class="eyebrow">Website Publishing</span>
+            <h2 style="font-size: 48px">기획부터 반응형까지<span class="gradient-text">완성한 웹사이트</span></h2>
+            <p class="kr">쇼핑몰, 기업 홍보, 호텔 그리고 모바일 웹<br>— 직접 기획·디자인·퍼블리싱한 작업물입니다.</p>
+          </div>
+          <article class="web-case"><div class="web-case__shot"><img src="https://image.thum.io/get/width/1200/crop/820/noanimate/https://merryhee71.cafe24.com/portfolio/website-publishing/01/index.html" alt="TOUTYEST · 투티에 — 실제 PC 화면"></div><div class="web-case__info"><span class="web-case__kicker">가방 브랜드 쇼핑몰</span><h3 class="web-case__title">TOUTYEST · 투티에</h3><p class="web-case__desc kr">가방 브랜드 투티에를 반응형으로 제작했습니다. 기존 사이트에서 가려져 있던 네비게이션이 잘 보이도록 사용자 편의성을 더욱 고려했습니다.</p><div class="web-case__specs"><div><b>디자인</b>Photoshop</div><div><b>퍼블리싱</b>HTML · CSS · jQuery</div><div><b>레이아웃</b>CSS Flex</div><div><b>플러그인</b>Slick slider</div><div><b>제작기간</b>0.5일</div><div><b>참여율</b>100%</div></div><div class="web-case__links"><a class="proj-link proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/website-publishing/01/index.html" target="_blank" rel="noopener">PC Ver.</a><a class="proj-link" href="https://merryhee71.cafe24.com/portfolio/website-publishing/website-publishing-mockup-01.html" target="_blank" rel="noopener">Mobile Ver.</a></div></div></article>
+          <article class="web-case"><div class="web-case__shot"><img src="https://image.thum.io/get/width/1200/crop/820/noanimate/https://merryhee71.cafe24.com/portfolio/website-publishing/02/index.html" alt="MOIA · 모이아 — 실제 PC 화면"></div><div class="web-case__info"><span class="web-case__kicker">여성의류 쇼핑몰</span><h3 class="web-case__title">MOIA · 모이아</h3><p class="web-case__desc kr">개선점을 기획 단계부터 체계적으로 분석하고, 기능을 고려해 UI 디자인을 진행했습니다. 문자열 변환 함수로 수량 증감에 따른 총합계 금액 계산을 JavaScript로 구현했습니다.</p><div class="web-case__specs"><div><b>디자인</b>Photoshop</div><div><b>퍼블리싱</b>+ JavaScript</div><div><b>레이아웃</b>CSS Flex</div><div><b>플러그인</b>Slick slider</div><div><b>제작기간</b>2일</div><div><b>참여율</b>100%</div></div><div class="web-case__links"><a class="proj-link proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/website-publishing/02/index.html" target="_blank" rel="noopener">PC Ver.</a><a class="proj-link" href="https://merryhee71.cafe24.com/doc/moia-web-plan.pdf" target="_blank" rel="noopener">기획서</a><a class="proj-link" href="https://merryhee71.cafe24.com/doc/moia-web-function-wireframe.pdf" target="_blank" rel="noopener">기능정의서</a></div></div></article>
+          <article class="web-case"><div class="web-case__shot"><img src="images-sm/web-03-screen.jpg" alt="Quanta Matrix — 실제 PC 화면"></div><div class="web-case__info"><span class="web-case__kicker">바이오 기업 홍보 페이지</span><h3 class="web-case__title">Quanta Matrix</h3><p class="web-case__desc kr">퀀타매트릭스 기업 페이지를 GSAP 라이브러리로 리디자인했습니다. ScrollTrigger, Timeline, Stagger, Modifiers &amp; Snap, Utils를 활용해 작업했습니다.</p><div class="web-case__specs"><div><b>퍼블리싱</b>GSAP</div><div><b>레이아웃</b>CSS</div><div><b>제작기간</b>0.1일</div><div><b>참여율</b>100%</div></div><div class="web-case__links"><a class="proj-link proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/website-publishing/03/index.html" target="_blank" rel="noopener">PC Ver.</a><a class="proj-link" href="https://merryhee71.cafe24.com/portfolio/website-publishing/website-publishing-mockup-03.html" target="_blank" rel="noopener">Mobile Ver.</a></div></div></article>
+          <article class="web-case"><div class="web-case__shot"><img src="https://image.thum.io/get/width/1200/crop/820/noanimate/https://merryhee71.cafe24.com/portfolio/website-publishing/04/index.html" alt="샹그릴라 보라카이 리조트 — 실제 PC 화면"></div><div class="web-case__info"><span class="web-case__kicker">호텔 · 리조트</span><h3 class="web-case__title">샹그릴라 보라카이 리조트</h3><p class="web-case__desc kr">기존 샹그릴라 보라카이 리조트를 벤치마킹해 새로운 구조로 리디자인했습니다. 단시간에 반응형을 고려한 구조 설계에 가장 중점을 두었으며 Flex를 사용했습니다.</p><div class="web-case__specs"><div><b>디자인</b>Photoshop</div><div><b>퍼블리싱</b>HTML · CSS · jQuery</div><div><b>레이아웃</b>CSS Flex</div><div><b>플러그인</b>Slick slider</div><div><b>제작기간</b>0.1일</div><div><b>참여율</b>100%</div></div><div class="web-case__links"><a class="proj-link proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/website-publishing/04/index.html" target="_blank" rel="noopener">PC Ver.</a><a class="proj-link" href="https://merryhee71.cafe24.com/portfolio/website-publishing/website-publishing-mockup-04.html" target="_blank" rel="noopener">Mobile Ver.</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="clone" data-screen-label="Clone Coding">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Clone Coding</span>
+          <h2 class="reveal" data-delay="1">빠른 퍼블리싱 <span class="gradient-text">스킬 트레이닝</span></h2>
+          <p class="reveal kr" data-delay="2">Netflix · Apple · Chrome을 반응형으로 클론 코딩했습니다. 제한된 시간(5시간) 안에 빠르고 정확하게 작업하는 데 중점을 두었습니다.</p>
+        </div>
+        <div class="clone-swiper">
+          <div class="swiper-wrapper" id="cloneGrid">
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/clone-01.jpg" alt="Netflix"></div><div class="proj-card__body"><h3 class="proj-card__title">Netflix</h3><div class="proj-card__links"><a class="proj-link proj-link--abbr proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/clone-coding/01/index.html" target="_blank" rel="noopener"><span class="lbl-full">PC Ver.</span></a><a class="proj-link proj-link--abbr" href="https://merryhee71.cafe24.com/portfolio/clone-coding/clone-coding-mockup-01.html" target="_blank" rel="noopener"><span class="lbl-full">Mobile Ver.</span></a></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/clone-02.jpg" alt="Apple"></div><div class="proj-card__body"><h3 class="proj-card__title">Apple</h3><div class="proj-card__links"><a class="proj-link proj-link--abbr proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/clone-coding/02/index.html" target="_blank" rel="noopener"><span class="lbl-full">PC Ver.</span></a><a class="proj-link proj-link--abbr" href="https://merryhee71.cafe24.com/portfolio/clone-coding/clone-coding-mockup-02.html" target="_blank" rel="noopener"><span class="lbl-full">Mobile Ver.</span></a></div></div></article></div>
+            <div class="swiper-slide"><article class="proj-card"><div class="proj-card__thumb"><img src="images-sm/clone-03.jpg" alt="Chrome"></div><div class="proj-card__body"><h3 class="proj-card__title">Chrome</h3><div class="proj-card__links"><a class="proj-link proj-link--abbr proj-link--solid" href="https://merryhee71.cafe24.com/portfolio/clone-coding/03/index.html" target="_blank" rel="noopener"><span class="lbl-full">PC Ver.</span></a><a class="proj-link proj-link--abbr" href="https://merryhee71.cafe24.com/portfolio/clone-coding/clone-coding-mockup-03.html" target="_blank" rel="noopener"><span class="lbl-full">Mobile Ver.</span></a></div></div></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="playground" data-screen-label="Practical Publishing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Practical Publishing</span>
+          <h2 class="reveal" data-delay="1">UI <span class="gradient-text">플레이그라운드</span></h2>
+          <p class="reveal kr" data-delay="2">프로토타입부터 인터랙션까지 — 실무 감각을 다듬으며 만든 UI 컴포넌트 모음입니다. 카드를 누르면 라이브 데모가 열립니다.</p>
+        </div>
+        <div class="thumb-grid">
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/prototype/01/index.html" target="_blank" rel="noopener"><img src="images-sm/prototype-ui-01.jpg" alt="Prototype UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/prototype/06/index.html" target="_blank" rel="noopener"><img src="images-sm/prototype-ui-06-1.jpg" alt="Prototype UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/tab-accordion/01/index.html" target="_blank" rel="noopener"><img src="images-sm/tab-accordion-01.jpg" alt="Tab · Accordion UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/tab-accordion/05/index.html" target="_blank" rel="noopener"><img src="images-sm/tab-accordion-05.jpg" alt="Tab · Accordion UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/hover-effect/01/index.html" target="_blank" rel="noopener"><img src="images-sm/hover-effect-ui-01.jpg" alt="Hover UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/hover-effect/04/index.html" target="_blank" rel="noopener"><img src="images-sm/hover-effect-ui-04.jpg" alt="Hover UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/form/01/index.html" target="_blank" rel="noopener"><img src="images-sm/form-ui-01.jpg" alt="Form UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/form/05/index.html" target="_blank" rel="noopener"><img src="images-sm/form-ui-05.jpg" alt="Form UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/card-ui/01/index.html" target="_blank" rel="noopener"><img src="images-sm/card-ui-01.jpg" alt="Card UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/card-ui/05/index.html" target="_blank" rel="noopener"><img src="images-sm/card-ui-05.jpg" alt="Card UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/animation/01/index.html" target="_blank" rel="noopener"><img src="images-sm/animation-ui-01.jpg" alt="Animation UI"></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/animation/06/index.html" target="_blank" rel="noopener"><img src="images-sm/animation-ui-06.jpg" alt="Animation UI"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="scss" data-screen-label="SCSS Works" style="padding-top:0">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span class="eyebrow reveal">SCSS (Sass) Works</span>
+          <h2 class="reveal" data-delay="1">변수와 믹스인으로 <span class="gradient-text">구조화한 스타일</span></h2>
+        </div>
+        <div class="thumb-grid scss-grid reveal" data-delay="1" id="scssGrid">
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/01/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-01.jpg" alt="Login form"><span class="thumb__cap"><b>Login form</b></span></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/02/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-02.jpg" alt="Animation"><span class="thumb__cap"><b>Animation</b></span></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/03/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-03.jpg" alt="Accordion"><span class="thumb__cap"><b>Accordion</b></span></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/04/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-04.jpg" alt="Hover effect"><span class="thumb__cap"><b>Hover effect</b></span></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/05/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-05.jpg" alt="Hover effect"><span class="thumb__cap"><b>Hover effect</b></span></a>
+          <a class="thumb" href="https://merryhee71.cafe24.com/portfolio/practical-coding/scss/06/index.html" target="_blank" rel="noopener"><img src="images-sm/scss-06.jpg" alt="Figma logo"><span class="thumb__cap"><b>Figma logo</b></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="graphic" data-screen-label="Graphic Works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Graphic Works</span>
+          <h2 class="reveal" data-delay="1">디자인 <span class="gradient-text">도구 활용 능력</span></h2>
+          <p class="reveal kr" data-delay="2">Illustrator · InDesign · Photoshop으로 작업한 그래픽 결과물입니다.</p>
+        </div>
+        <div class="graphic-grid reveal" data-delay="1" id="graphicGrid">
+          <a class="graphic-item" href="images-sm/graphic-01.jpg"><img src="images-sm/graphic-01.jpg" alt="Map"><span class="graphic-item__cap"><b>Map</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-02.jpg"><img src="images-sm/graphic-02.jpg" alt="Watch"><span class="graphic-item__cap"><b>Watch</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-03.jpg"><img src="images-sm/graphic-03.jpg" alt="Airplane"><span class="graphic-item__cap"><b>Airplane</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-04.jpg"><img src="images-sm/graphic-04.jpg" alt="Business Card"><span class="graphic-item__cap"><b>Business Card</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-05.jpg"><img src="images-sm/graphic-05.jpg" alt="Business Card"><span class="graphic-item__cap"><b>Business Card</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-06.jpg"><img src="images-sm/graphic-06.jpg" alt="Magazine"><span class="graphic-item__cap"><b>Magazine</b><small>by InDesign</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-07.jpg"><img src="images-sm/graphic-07.jpg" alt="Book Cover"><span class="graphic-item__cap"><b>Book Cover</b><small>by InDesign</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-08.jpg"><img src="images-sm/graphic-08.jpg" alt="Leaflet"><span class="graphic-item__cap"><b>Leaflet</b><small>by InDesign</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-09.jpg"><img src="images-sm/graphic-09.jpg" alt="Leaflet"><span class="graphic-item__cap"><b>Leaflet</b><small>by InDesign</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-10.jpg"><img src="images-sm/graphic-10.jpg" alt="Poster"><span class="graphic-item__cap"><b>Poster</b><small>by Illustrator</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-11.jpg"><img src="images-sm/graphic-11.jpg" alt="CD"><span class="graphic-item__cap"><b>CD</b><small>by Photoshop</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-12.jpg"><img src="images-sm/graphic-12.jpg" alt="CD"><span class="graphic-item__cap"><b>CD</b><small>by Photoshop</small></span></a>
+          <a class="graphic-item" href="images-sm/graphic-13.jpg"><img src="images-sm/graphic-13.jpg" alt="Label"><span class="graphic-item__cap"><b>Label</b><small>by Illustrator</small></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark final-cta" id="contact" data-screen-label="Contact">
+      <div class="container final-cta__grid">
+        <div class="final-cta__logo reveal" aria-hidden="true">
+          <div class="neon-j">
+            <span class="neon-j__halo">J</span>
+            <span class="neon-j__core">J</span>
+          </div>
+        </div>
+        <div class="final-cta__copy">
+          <span class="eyebrow reveal">Let's work together</span>
+          <h2 class="reveal" data-delay="1">함께 소통하며 만들어 갈 준비가 되어 있습니다</h2>
+          <p class="reveal kr" data-delay="2">기획 의도를 이해하고, 협업 속도를 높이며, 유지보수까지 책임지는 프론트엔드 퍼블리셔를 찾고 계신가요? 작업물과 코드를 자유롭게 살펴보세요.</p>
+          <div class="contact-links reveal" data-delay="3">
+            <a class="proj-link proj-link--solid" href="https://github.com/jhhong71" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 6.84 9.5c.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2Z"></path></svg> GitHub</a>
+            <a class="proj-link" href="https://my-markup-guide.vercel.app/" target="_blank" rel="noopener">Markup Guide ↗</a>
+            <a class="proj-link" href="https://jhhong71.github.io/componentguide/v1/admin/index.html" target="_blank" rel="noopener">Component Guide ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© 2026 J's Front-end Publisher Portfolio.</span>
+        <span>Standard · Accessibility · Clean Code</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

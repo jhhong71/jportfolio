@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Summer Class Apply</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="application">
+    <h1>여름방학 특강 신청하기</h1>
+    <fieldset>
+      <legend>교육과정</legend>
+      <div class="field">
+        <span>영어회화</span>
+        <div>
+          <input type="text" value="오전 09:00~11:00" readonly> (초급레벨)
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>신청자 기본정보</legend>
+      <div class="field">
+        <span>이름</span><input type="text">
+      </div>
+      <div class="field">
+        <span>이메일</span><input type="email">
+      </div>
+      <div class="field">
+        <span>비밀번호</span><input type="password" placeholder="특수기호조합 8자리">
+      </div>
+      <div class="field">
+        <span>학과</span>
+        <select>
+          <option value="">학과를 선택하세요.</option>
+          <option value="">건축학과</option>
+          <option value="">기계공학과</option>
+          <option value="">식품영양학과</option>
+          <option value="">산업디자인과</option>
+        </select>
+      </div>
+      <div class="field">
+        <span>성별</span>
+        <div>
+          <input type="radio" name="gender" checked>여자
+          <input type="radio" name="gender">남자
+        </div>
+      </div>
+      <div class="field">
+        <span>관심사</span>
+        <div>
+          <input type="checkbox" checked> 여행
+          <input type="checkbox"> 게임
+          <input type="checkbox"> 공연
+          <input type="checkbox"> 운동
+          <input type="checkbox"> 기타
+        </div>
+      </div>
+      <div class="field">
+        <span>바라는 점</span>
+        <textarea placeholder="200자 이내로 적어주세요."></textarea>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <button>수강신청</button>
+      <button>다시쓰기</button>
+    </div>
+  </div>  
+    
+</body>
+</html>

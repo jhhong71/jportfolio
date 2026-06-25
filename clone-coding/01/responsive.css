@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+  /* Header */
+  nav {
+    width: 100%;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .logo a img {
+    width: 130px;
+  }
+  .signin {
+    transform: scale(0.9);
+  }
+  .select-language {
+    transform: scale(0.9);
+  }
+  .select-language select {
+    margin-right: 10px;
+  }
+  section {
+    padding: 0 20px;
+  }
+  .section-inner {
+    width: 100%;
+  }
+
+  /* Section : Welcome */
+  .welcome-heading h1 {
+    font-size: 2.7rem;
+    padding-top: 200px;
+  }
+  .welcome-heading h4 {
+    line-height: 1.2em;
+  }
+  .welcome-heading {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .getstarted input[type=email] {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .getstarted input[type=email] + span {
+    top: 15px;
+  }
+  .getstarted input[type=email]:focus + span {
+    font-size: 12px;
+  }
+  .getstarted button {
+    width: 35%;
+    height: 40px;
+    border-radius: 3px;
+  }
+  .newsletter {
+    width: 100%;
+  }
+  .newsletter p {
+    font-size: 18px;
+  }
+  .section-content {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+    }
+    .section-content .desc {
+      text-align: center;
+    }
+  .preview img {
+    width: 100%;
+  }
+  .download .section-content .desc,
+  .create .section-content .desc {
+    order: 1;
+  }
+  .download .section-content .preview,
+  .create .section-content .preview {
+    order: 2;
+  }
+  .desc h1 {
+    font-size: 30px;
+  }
+  .desc p {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  /* FAQ */
+  .faq .section-inner {
+    width: 100%;
+  }
+  .faq-accordion h1 {
+    font-size: 2.2rem;
+  }
+  .faq-title span {
+  }
+  .faq-title,
+  .faq-content {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .sitemap span {
+    font-size: 17px;
+  }
+  .link-item {
+    width: 50%;
+  }
+}

@@ -1,0 +1,51 @@
+/* App UI Hover Effect */
+body {
+	background-color: #f4f4f4;
+	height: 100vh;
+	margin: 0;
+}
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.app-ui {
+	position: relative;
+	width: 360px;
+	height: 720px;
+	background-color: #ddd;
+	transform: rotate(-30deg) skewX(20deg) scale(0.7);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+	border-radius: 15px;
+}
+.app-ui:hover {
+	box-shadow: -50px 100px 100px rgba(0, 0, 0, 0.3);
+}
+.app-ui img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 15px;
+	transition: 0.5s;
+}
+.app-ui:hover img:nth-child(1) {
+	transform: translate(40px, -40px);
+	opacity: 0.4;
+}
+.app-ui:hover img:nth-child(2) {
+	transform: translate(80px, -80px);
+	opacity: 0.6;
+}
+.app-ui:hover img:nth-child(3) {
+	transform: translate(120px, -120px);
+	opacity: 0.8;
+}
+.app-ui:hover img:nth-child(4) {
+	transform: translate(160px, -160px);
+}
+
+
+
+

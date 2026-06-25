@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calc-frame">
+    <form class="calculator" name="calc">
+      <input class="value" name="number" type="text" readonly>
+      <span class="num clear" onclick="calc.number.value=''">C</span>
+      <span class="num divide" onclick="calc.number.value += '/'">/</span>
+      <span class="num multiply" onclick="calc.number.value += '*'">*</span>
+      <span class="num" onclick="calc.number.value += '7'">7</span>
+      <span class="num" onclick="calc.number.value += '8'">8</span>
+      <span class="num" onclick="calc.number.value += '9'">9</span>
+      <span class="num minus" onclick="calc.number.value += '-'">-</span>
+      <span class="num" onclick="calc.number.value += '4'">4</span>
+      <span class="num" onclick="calc.number.value += '5'">5</span>
+      <span class="num" onclick="calc.number.value += '6'">6</span>
+      <span class="num plus" onclick="calc.number.value += '+'">+</span>
+      <span class="num" onclick="calc.number.value += '1'">1</span>
+      <span class="num" onclick="calc.number.value += '2'">2</span>
+      <span class="num" onclick="calc.number.value += '3'">3</span>
+      <span class="num" onclick="calc.number.value += '0'">0</span>
+      <span class="num" onclick="calc.number.value += '00'">00</span>
+      <span class="num" onclick="calc.number.value += ','">,</span>
+      <span class="num equal" onclick="calc.number.value = eval(calc.number.value)">=</span>
+    </form>
+  </div>
+  
+</body>
+</html>

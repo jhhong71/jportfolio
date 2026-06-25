@@ -1,0 +1,114 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Default CSS */
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5em;
+	background-color: #0A233D;
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Border Radius Animation */
+.square-inner {
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1500px;
+	text-align: center;
+}
+.square-inner h1 {
+	color: #fff;
+	font-size: 3em;
+	margin-bottom: 70px;
+	margin-top: 0;
+}
+.square {
+	position: relative;
+	width: 400px;
+	height: 400px;	
+	display: inline-block;
+	margin: 0 25px;
+}
+.square span {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	border: 1px solid #fff;
+	top: 0;
+	left: 0;
+	border-radius: 53% 47% 40% 60% / 40% 38% 62% 60%;
+	animation: rotate linear infinite;
+	transition: 0.5s;
+}
+.square span:nth-of-type(1) {
+	animation-duration: 10s;
+}
+.square span:nth-of-type(2) {
+	animation-duration: 4s;
+	animation-direction: reverse;
+}
+.square span:nth-of-type(3) {
+	animation-duration: 7s;
+}
+.square:hover span {
+	border-color: transparent;
+}
+.square:hover span:nth-of-type(1) {
+	opacity: 0.3;
+}
+.square:hover span:nth-of-type(2) {
+	opacity: 0.8;
+}
+.square:hover span:nth-of-type(3) {
+	opacity: 0.5;
+}
+.square:nth-of-type(1):hover span {
+	background-color: #1599C3;
+}
+.square:nth-of-type(2):hover span {
+	background-color: #94cca5;
+}
+.square:nth-of-type(3):hover span {
+	background-color: #5CA89D;
+}
+.square div {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.square div a {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 7px 15px;
+	display: inline-block;
+	transform: translateY(5px);
+	border-radius: 47% 53% 43% 57% / 49% 47% 53% 51% ;
+	text-transform: capitalize;
+	transition: 0.35s;
+}
+.square div a:hover {
+	color: #0A233D;
+	background-color: #fff;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);	
+	}
+}

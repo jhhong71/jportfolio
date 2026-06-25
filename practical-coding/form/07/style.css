@@ -1,0 +1,368 @@
+/* Noonu Nanum Square */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+/* Remixicon CDN */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+/* Default CSS */
+* {
+	box-sizing: border-box;
+  outline: none;
+	font-family: 'nanumsquare';
+}
+body {
+	font-weight: 300;
+	font-size: 14px;
+	color: #333;
+	line-height: 1.5em;
+	margin: 0;
+	background-color: #fff;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ########## Naver Tab Login ########## */
+/* Entire Wireframe */
+.login-frame {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.naver-login {
+	width: 460px;
+}
+.main-logo {
+	height: 35px;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.tab-inner {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 7px;
+	background-color: transparent;
+}
+.find-register {
+	text-align: center;
+	margin: 20px 0;
+}
+.login-footer {
+	margin-top: 100px;
+}
+/* Login Tabmenu */
+.tab-inner {}
+.btn-tab {
+	height: 50px;
+	display: flex;
+	padding-left: 1px;
+	position: relative;
+}
+.btn-tab label {
+	border: 1px solid #E3E3E3;
+	border-radius: 7px 7px 0 0;
+	flex: 1;
+	border-bottom: none;
+	text-align: center;
+	line-height: 46px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #F8F9FA;
+	margin-left: -1px;
+	color: rgb(119, 119, 119);
+}
+.btn-tab label i {
+	transform: translateY(3px);
+	display: inline-block;
+	margin-right: 3px;
+}
+.tab {
+	display: none;
+	border: 1px solid #ccc;
+	height: 260px;
+	border-radius: 0 0 7px 7px;
+}
+.tooltip {
+	position: absolute;
+	font-size: 11px;
+	border-radius: 10px;
+	border: 1px solid #03C75A;
+	padding: 0 5px;
+	top: -10px;
+	right: -50px;
+	background-color: #fff;
+	color: #03C75A;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.192);
+}
+.tooltip em {
+	font-style: normal;
+	cursor: pointer;
+	font-weight: 500;
+	vertical-align: middle;
+	display: inline-block;
+	transform: translateY(-1px);
+}
+/* Checked Function */
+input[name=tabmenu] {
+	display: none;
+}
+input[id=tab1]:checked ~ .tabs .id-login {
+	display: block;
+}
+input[id=tab2]:checked ~ .tabs .disposable-login {
+	display: block;
+}
+input[id=tab3]:checked ~ .tabs .qr-login {
+	display: block;
+}
+input[id=tab1]:checked ~ .btn-tab label[for=tab1],
+input[id=tab2]:checked ~ .btn-tab label[for=tab2], 
+input[id=tab3]:checked ~ .btn-tab label[for=tab3] {
+	background-color: #fff;
+	margin-bottom: -1px;
+	color: rgb(51, 51, 51);
+	border-color: #ccc;
+	z-index: 1;
+}
+input[id=tab1]:checked ~ .btn-tab label[for=tab1] i, 
+input[id=tab2]:checked ~ .btn-tab label[for=tab2] i, 
+input[id=tab3]:checked ~ .btn-tab label[for=tab3] i {
+	color: #03C75A;
+}
+/* Tab : id-login */
+.id-login .fields,
+.disposable-login .fields {
+	width: 85%;
+	margin: auto;
+	margin-top: 25px;
+}
+.id-login .field {
+	position: relative;
+}
+.id-login .field input,
+.disposable-login .field input {
+	width: 100%;
+	padding: 11px;
+	padding-left: 40px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.disposable-login .field input {
+	text-align: center;
+	padding: 13px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.id-login .field input[type=text] {
+	border-radius: 5px 5px 0 0;
+	margin-bottom: -1px;
+}
+.id-login .field input[type=password] {
+	border-radius: 0 0 5px 5px;
+}
+.id-login .field i {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 18px;
+	color: #B0B0B0;
+	z-index: 2;
+}
+.id-login .field input::placeholder,
+.disposable-login .field input::placeholder {
+	color: #B0B0B0;
+	font-size: 15px
+}
+.id-login .field input:focus,
+.disposable-login .field input:focus {
+	border-color: #03C75A;
+	position: relative;
+	z-index: 1;
+}
+.id-login .field input:focus + i {
+	color: #000;
+}
+/* Tab: disposable-login */
+.disposable-login p {
+	width: 85%;
+	margin: auto;
+	margin-top: 30px;
+	font-size: 14px;
+	text-align: center;
+}
+.disposable-login p em {
+	font-style: normal;
+	color: #03C75A;
+	font-weight: 400;
+}
+.disposable-login p i {
+	display: inline-block;
+	transform: translateY(3px);
+}
+/* Tab: qr-login */
+.qr-inner {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+.qr-image {
+	width: 180px;
+	margin: auto;
+	display: flex;
+	gap: 10px;
+}
+.qr-image > * {
+	flex: 1;
+}
+.qr-image img {
+	height: 95px;
+}
+.qr-image .time {
+	text-align: left;
+	align-self: flex-end;
+}
+.qr-image .time b {
+	display: block;
+	color: #03C75A;
+}
+.qr-info p:first-child {
+	margin-bottom: 0;
+	font-weight: 500;
+}
+.qr-info p:last-child {
+	font-size: 13px;
+	color: rgb(102, 102, 102);
+	margin-top: 0;
+}
+.qr-info p i {
+	color: #03C75A;
+	display: inline-block;
+	transform: translateY(3px);
+}
+.qr-info p .badge {
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 20px;
+	font-size: 13px;
+	padding: 2px 5px;
+}
+/* Status */
+.status {
+	width: 85%;
+	margin: 15px auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.status label {
+	cursor: pointer;
+}
+.status label em {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	transform: translateY(5px);
+	background: url('images/icon-radio.png') no-repeat ;
+	background-position: left;
+}
+input[id=chk-save] {
+	display: none;
+}
+input[id=chk-save]:checked + em {
+	background-position: right;
+}
+/* Switch Checkbox */
+input[id=chk-ip] {
+	-webkit-appearance: none;
+	background-color: #03C75A;
+	width: 33px;
+	height: 18px;
+	border-radius: 20px;
+	position: relative;
+	cursor: pointer;
+	transform: translateY(8px);
+}
+input[id=chk-ip]:before {
+	content: '';
+	background-color: #fff;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	border-radius: 50%;
+	right: 2px;
+	top: 2px;
+	transition: 0.1s;
+}
+input[id=chk-ip]:checked {
+	background-color: #C3C8C9;
+}
+input[id=chk-ip]:checked:before {
+	right: 17px;
+}
+.btn-login {
+	background-color: #03C75A;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	width: 85%;
+	margin: auto;
+	display: block;
+	padding: 13px;
+	cursor: pointer;
+}
+/* Find & Register */
+.find-register a {
+	color: rgb(136, 136, 136);
+	font-weight: 500;
+}
+.find-register a:after {
+	content: '|';
+	color: #ddd;
+	margin-right: 5px;
+	margin-left: 7px;
+}
+.find-register a:last-child:after {
+	display: none;
+}
+/* Login Footer */
+.login-footer {
+	text-align: center;
+	font-size: 13px;
+}
+.footer-link a {
+	color: rgb(136, 136, 136);
+}
+.footer-link > a:after {
+	content: '|';
+	color: #ddd;
+	margin-right: 3px;
+	margin-left: 7px;
+}
+.footer-link a:last-child:after {
+	display: none;
+}
+.footer-link a:nth-child(2) {
+	font-weight: 600;
+}
+.copyright a {
+	color: rgb(136, 136, 136);
+}
+.copyright img {
+	height: 14px;
+	margin-right: 8px;
+	transform: translateY(3px);
+}
+.copyright b {
+	font-weight: normal;
+	color: #000;
+}

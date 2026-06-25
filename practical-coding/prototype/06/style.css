@@ -1,0 +1,134 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #222;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.6em;
+	margin: 0;
+  transition: 0.5s;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Greeting Dark Light & Mode */
+.container {
+  height: 100vh;
+  margin: auto;
+  width: 1280px;
+  transition: 0.35s;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.logo img {
+  width: 150px;
+}
+.gnb a {
+  padding: 10px;
+  color: #000;
+}
+.darkmode {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+.darkmode:before {
+  content: '\F497';
+  font-family: bootstrap-icons;
+}
+.content {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px;
+}
+.content > div {
+  width: 50%;
+  height: 500px;
+  float: left;
+  padding: 30px;
+}
+.content .content-detail {
+  padding-top: 90px;
+}
+.content .content-detail h1 {
+  font-size: 29px;
+  line-height: 1.3em;
+}
+.content .content-detail span {
+  color: #0BABA8;
+}
+.content .content-detail p {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+.content .content-detail a {
+  background-color: #32384C;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+}
+.content .content-item {
+  position: relative;
+}
+.content .content-item > img {
+  position: absolute;
+}
+.content .content-item img:last-child {
+  display: none;
+}
+.sns {
+  padding: 10px 60px;
+}
+.sns a {
+  font-size: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #32384C;
+  text-align: center;
+  line-height: 27px;
+}
+.sns a i {
+  color: #fff;
+}
+
+/* Dark Mode CSS */
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+body.dark header img {
+  filter: invert();
+}
+body.dark header .gnb a {
+  color: #fff;
+}
+body.dark .content-item img:first-child {
+  display: none;
+}
+body.dark .content-item img:last-child {
+  display: block;
+}
+body.dark .darkmode:before {
+  content: '\F1D2';
+  font-family: bootstrap-icons;
+}
+
+
