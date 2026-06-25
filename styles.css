@@ -1781,8 +1781,10 @@ h1, h2, h3, h4 { font-family: var(--font-display), var(--font-kr); }
    HERO VIDEO — perceived upscaling / crisper rendering
    ============================================================ */
 .hero-video {
-  /* gentle crop + sharpen so the loop reads higher-resolution */
-  transform: scale(1.06);
+  /* gentle crop + sharpen so the loop reads higher-resolution.
+     Scaled up and nudged toward the bottom-right so the corner
+     watermark is pushed past the wrap edge and clipped away. */
+  transform: scale(1.2) translate(3%, 3.6%);
   transform-origin: center center;
   filter: saturate(1.12) contrast(1.07) brightness(1.03);
   image-rendering: -webkit-optimize-contrast;
