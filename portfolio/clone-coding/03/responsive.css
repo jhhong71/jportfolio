@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+  /* Common CSS */
+  .smart .photo,
+  .edit .photo {
+    order: 2;
+  }
+  .smart .desc,
+  .edit .desc {
+    order: 1;
+  }
+  section .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  section .inner h1 {
+    font-size: 28px;
+  }
+
+  /* Section : Welcome */
+  .heading {
+    width: 100%;
+    padding: 20px;
+  }
+  .heading h1 {
+    font-size: 36px;
+  }
+  .photo img {
+    width: 100%;
+  }
+
+  /* Section : Callaction */
+  .callaction {
+    background-image: url('images/download-bg-mobile.svg');
+  }
+  section.callaction h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .link-item {
+    float: none;
+    width: 100%;
+  }
+  .link-item-title {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    pointer-events: all;
+  }
+  .link-item:last-child .link-item-title {
+    border-bottom: none;
+  }
+  .link-item-title:after {
+    content: '\e942';
+    font-family: xeicon;
+    float: right;
+  }
+  .link-item-title.active:after {
+    transform: rotate(180deg);
+  }
+  .link-item-content {
+    display: none;
+  }
+  .logo-footer {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .policy {
+    float: none;
+  }
+  .policy a {
+    padding: 10px 0;
+    margin-right: 20px;
+  }
+  .policy a:after {
+    display: none;
+  }
+  .policy a:first-child {
+    display: block;
+  }
+  .language {
+    float: none;
+    margin-top: 20px;
+  }
+  .language select {
+    font-size: 13px;
+  }
+}

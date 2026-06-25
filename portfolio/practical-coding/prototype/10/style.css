@@ -1,0 +1,231 @@
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Video Landing */
+.video-frame {
+  position: relative;
+  height: 100vh;
+}
+.video-frame:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left bottom, #201822, transparent);
+}
+.video-frame video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.heading {
+  position: absolute;
+  width: 700px;
+  left: 50px;
+  bottom: 100px;
+  animation: showing-left 2s 1s linear both;
+}
+.heading h1 {
+  font-size: 38px;
+}
+.heading em {
+  font-style: normal;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.btn-program,
+.btn-review {
+  border: 1px solid #fff;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  padding: 8px;
+  margin-right: 20px;
+  border-radius: 30px;
+  transition: 0.35s;
+}
+.btn-program {
+  color: #000;
+  border: transparent;
+}
+.btn-program:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-review {
+  background-color: transparent;
+}
+.btn-review:hover {
+  background: #fff;
+  color: #000;
+}
+.aniversary {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+  color: #877793;
+  animation: showing-right 2s 1s linear both;
+}
+.aniversary.active {
+  color: #877793;
+  z-index: 200;
+}
+.aniversary em {
+  text-transform: capitalize;
+  display: block;
+  font-size: 30px;
+  font-style: normal;
+  margin-bottom: 90px;
+  letter-spacing: 2px;
+}
+.aniversary span {
+  font-family: 'Monoton', cursive;
+  font-size: 150px;
+}
+.trigger {
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+  z-index: 100;
+}
+.trigger.active span {
+  background-color: #fff;
+}
+.trigger span {
+  position: absolute;
+  background-color: #cbbfce;
+  width: 100%;
+  height: 1px;
+  transition: 0.35s;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.58);
+  top: 0;
+  left: 0;
+  display: none;
+}
+.gnb {
+  line-height: 4em;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gnb a {
+  display: block;
+  font-size: 24px;
+  transition: 0.35s;
+  animation: gnb 1s linear both;
+  opacity: 0;
+}
+.gnb a:hover {
+  color: #89459d;
+}
+.gnb a:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.gnb a:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.gnb a:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.gnb a:nth-child(4) {
+  animation-delay: 1.1s;
+}
+.gnb a:nth-child(5) {
+  animation-delay: 1.3s;
+}
+
+@keyframes showing-left {
+  0% {
+    margin-left: -250px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+@keyframes showing-right {
+  0% {
+    margin-right: -250px;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes gnb {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+

@@ -1,0 +1,338 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+/* Default CSS */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #222;
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	color: #222;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5 {
+	font-weight: normal;
+}
+
+/* ####### HanCom Office Download ####### */
+header {}
+.gnb-outer {
+	background-color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 50px;
+}
+.gnb > * {}
+.gnb {
+	display: flex;
+	width: 400px;
+	align-items: center;
+}
+.gnb .logo {}
+.gnb-link {
+	flex: 1;
+	text-align: center;
+}
+.gnb-link a {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 12px;
+}
+.gnb-link a:hover {
+	color: royalblue;
+}
+.lnb > * {
+	transform:;
+}
+.lnb {
+	display: flex;
+	align-items: center;
+}
+.lnb-link {
+	padding-right: 40px;
+}
+.lnb-link a {
+	font-size: 14px;
+}
+.lnb-link a:hover {
+	text-decoration: underline;
+}
+.lnb-link a:after {
+	content: '|';
+	padding: 0 7px;
+	font-size: 12px;
+	color: #ccc;
+	text-decoration: none;
+	display: inline-block;
+}
+.lnb-link a:last-child:after{
+	display: none;
+}
+.hancom2022 {
+	width: 150px;
+	background: linear-gradient(to right, #D21332, #50318F);
+	height: 100%;
+	padding-top: 5px;
+}
+.hancom2022 a {
+	color: #fff;
+	display: block;
+	text-align: center;
+	height: 100%;
+	font-size: 18px;
+}
+.breadcrumbs-outer {
+	height: 50px;
+	background-color: #58585b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+.breadcrumbs {}
+.breadcrumbs a, 
+.breadcrumbs i {
+	color: #fff;
+}
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+.breadcrumbs a:after {
+	content: '\F285';
+	font-family: bootstrap-icons;
+	margin-left: 5px;
+	font-size: 13px;
+	color: #aaa;
+	display: inline-block;
+	text-decoration: none;
+}
+.breadcrumbs a:last-child:after {
+	display: none;
+}
+.breadcrumbs a:last-child {
+	pointer-events: none;
+}
+.extra-link {}
+.extra-link a {
+	color: #fff;
+	margin-right: 15px;
+}
+.extra-link a:hover {
+	text-decoration: underline;
+}
+
+/* ####### Section ####### */
+/* ####### Download Popular ####### */
+section {}
+.section-inner {
+	width: 1150px;
+	margin: 50px auto;
+}
+.section-inner h1 {
+	font-size: 24px;
+}
+.section-inner hr {
+	border: 1px solid #E8E8E8;
+	border-top: none;
+}
+.download-popular {}
+.download-popular h2 {
+	font-size: 20px;
+}
+.download-items {
+	display: flex;
+	justify-content: space-between;
+}
+.download-item {
+	width: 360px;
+	height: 150px;
+	text-align: center;
+	position: relative;
+}
+.download-item:nth-child(1) {
+	background-color: #185EAB;
+}
+.download-item:nth-child(2) {
+	background-color: #4F48A9;
+}
+.download-item:nth-child(3) {
+	background-color: #8C65C1;
+}
+.download-item p {
+	color: #fff;
+	font-size: 18px;
+}
+.download-item p span {
+	display: block;
+	margin-top: 5px;
+	font-size: 15px;
+	color: #fff;
+}
+.download-item a {
+	display: inline-block;
+	background-color: #043082;
+	color: #fff;
+	width: 120px;
+	padding: 7px;
+	text-align: center;
+}
+.download-item:nth-child(3) a {
+	width: 180px;
+	background-color: #4F48A9;
+}
+.desc {
+	position: absolute;
+	border: 3px solid #185EAB;
+	border-top: none;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+}
+.download-item:nth-child(1) .desc {
+	border-color: #185EAB;
+}
+.download-item:nth-child(2) .desc {
+	border-color: #4F48A9;
+}
+.download-item:nth-child(3) .desc {
+	border-color: #8C65C1;
+}
+.desc p {
+	color: #222;
+	font-size: 14px;
+	margin: 20px 10px 10px 10px;
+	line-height: 1.5em;
+}
+.desc-detail {
+	margin: 14px 10px 10px 10px;
+	text-align: left;
+	list-style: none;
+	background-color: #F4F4F4;
+	padding: 12px;
+}
+.desc-detail span {
+	display: list-item;
+	font-size: 14px;
+}
+.desc-detail span:before {
+	content: '-';
+	margin-right: 5px;
+}
+
+/* ####### Download Free ####### */
+.download-free {}
+.download-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.download-header .title {}
+.download-header .title h2 {
+	font-size: 20px;
+}
+.download-header .title p {}
+.btn-global {
+	background-color: #0A56A9;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px 10px;
+}
+.product-search {
+	background-color: #F4F7F7;
+	padding: 15px;
+}
+.product-search select {
+	border: 1px solid #ddd;
+	width: 310px;
+	height: 30px;
+}
+.product-search button {
+	border: none;
+	width: 58px;
+	height: 30px;
+	background-color: #68707F;
+	color: #fff;
+}
+.product {
+	width: 100%;
+	margin: 10px 0;
+	border-collapse: collapse;
+	text-align: center;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+.product thead tr th:not(tr:first-child th:last-child) {
+	border-bottom: 1px solid #000;
+}
+.product tbody tr th,
+.product tbody tr:last-child td {
+	border-bottom: 1px solid #000;
+}
+.product thead,
+.product-01 {
+	background-color: #F4F4F4;
+}
+.product tr th,
+.product tr td {
+	padding: 13px 10px;
+	border: 1px solid #e0e0e0;
+}
+.product tr th:first-child {
+	border-left: none;
+}
+.product tr th:last-child,
+.product tr td {
+	border-right: none;
+}
+.product tr th {
+	font-weight: 400;
+}
+.product tr td {
+	font-size: 13px;
+	color: #444;
+}
+.product a:hover {
+	color: rgb(10, 86, 169);
+	text-decoration: underline;
+}
+
+
+
+/* CSS Hover Function : option #01 */
+/* .desc {
+	display: none;
+}
+.download-item:hover .desc {
+	display: block;
+} */
+
+/* CSS Hover Function : option #02 */
+/* .desc {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.download-item:hover .desc {
+	opacity: 1;
+	visibility: visible;
+} */
+
+/* jQuery Hover Function : option #01 */
+.desc {
+	display: none;
+}

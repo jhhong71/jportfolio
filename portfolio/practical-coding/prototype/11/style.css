@@ -1,0 +1,444 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	box-sizing: border-box;
+  outline: none;
+	font-style: normal;
+	border: none;
+}
+body {
+	color: #222;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0;
+	height: 100vh;
+}
+
+/* Reset CSS */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-weight: normal;
+}
+button {
+	cursor: pointer;
+	border: none;
+}
+.field select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url('images/icon-select.png') no-repeat center right 10px;
+  background-color: #fff;
+}
+
+/* BRANDI SIGNIN FORM */
+/* Header */
+header {
+	border-bottom: 1px solid #ddd;
+}
+.banner {
+	display: block;
+	width: 100%;
+	height: 105px;
+	margin-bottom: 30px;
+}
+.banner img {
+	object-fit: cover;
+	width: inherit;
+	height: inherit;
+	object-position: center;
+}
+.header-inner {
+	width: 1280px;
+	margin: auto;
+}
+.navi {
+	display: flex;
+	align-items: center;
+}
+.header-logo {
+	margin-right: auto;
+}
+.search {
+	border-bottom: 1px solid #ddd;
+}
+.mypage {
+	margin-left: 50px;
+	height: 40px;
+}
+.mypage a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.search input[type=text] {
+	padding-left: 5px;
+}
+.search i,
+.mypage a i {
+	font-size: 18px;
+}
+.mypage a:nth-child(3) i {
+	position: relative;
+}
+.mypage a:nth-child(3) i:after {
+	content: attr(data-status);
+	position: absolute;
+	background-color: #4A4F57;
+	color: #fff;
+	font-size: 5px;
+	width: 22px;
+	height: 14px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 14px;
+	top: -3px;
+	right: -11px;
+}
+gnb {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	height: 68px;
+}
+gnb a {
+	display: block;
+	padding: 10px;
+	border-bottom: 2px solid transparent;
+}
+gnb a:hover {
+	border-bottom: 2px solid #ddd;
+}
+
+/* Section: Signin-header */
+section {
+	width: 600px;
+	margin: 80px auto;
+}
+.signin-header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.signin-header h1 {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 36px;
+
+}
+.signin-header p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	color: rgb(128, 136, 147);
+	position: relative;
+	padding-bottom: 20px;
+}
+.signin-header p:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 4px;
+	background-color: #fee500;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Section: Signin-form */
+.signin-form {}
+.signin-form .field {
+	margin: 20px;
+}
+.signin-form .field span {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+.signin-form .field span em {
+	color: crimson;
+}
+.signin-form .field input[type=text],
+.signin-form .field input[type=email],
+.signin-form .field input[type=password],
+.signin-form .field select,
+.field.num button {
+	width: 100%;
+	padding: 13px;
+	margin-bottom: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.signin-form .field input[type=text]:focus,
+.signin-form .field input[type=text]:hover,
+.signin-form .field input[type=email]:focus,
+.signin-form .field input[type=email]:hover,
+.signin-form .field input[type=password]:focus,
+.signin-form .field input[type=password]:hover,
+.signin-form .field select:focus,
+.signin-form .field select:hover {
+	border: 1px solid #fee500;
+}
+.field.num {
+	margin: 0;
+	display: flex;
+	gap: 8px;
+}
+.field.num input[type=text] {
+	flex: 2;
+}
+.field.num button {
+	flex: 1;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.field.num button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.field.birth {
+	margin: 0;
+	display: flex;
+	gap: 8px;
+}
+.field.birth select {
+	flex: 1;
+}
+.field p,
+.field b {
+	color: rgb(128, 136, 147);
+	font-size: 14px;
+	margin-top: 0;
+}
+.field.agree {
+	border-top: 1px solid #ddd;
+	margin-top: 50px;
+	padding-top: 40px;
+}
+.agree-title {
+	display: inline-block;
+}
+.agree-title label {
+	display: flex;
+	align-items: center;
+}
+.agree-subtitle {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.agree-subtitle div {
+	display: flex;
+}
+.agree-subtitle div label {
+	/* flex: 5; */
+	margin: 10px 0;
+	display: inline-block;
+}
+.agree-subtitle div label em {
+	color: crimson;
+	font-weight: 400;
+}
+.agree-subtitle div label b {
+	font-weight: 400;
+}
+.agree-subtitle div a {
+	flex: 1;
+	color: rgb(128, 136, 147);
+	font-size: 14px;
+	text-align: right;
+}
+input[id=chk-agree],
+input[id=chkAll] {
+	display: none;
+}
+.agree-title input[id=chkAll] + i,
+.agree-subtitle input[id=chk-agree] + i {
+	background: url('images/icon-chk.png') no-repeat center center;
+	width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+	background-position: left;
+}
+input[id=chkAll]:checked + i,
+input[id=chk-agree]:checked + i {
+	background-position: right;
+}
+.agree-title input[id=chkAll] + i {
+	transform: translateY(-2px);
+}
+.agree-subtitle input[id=chk-agree] + i {
+	transform: translateY(5px);
+}
+.open-content:hover {
+	text-decoration: underline;
+}
+.btn-submit {
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	padding: 13px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+/* View-contents */
+.view-contents {
+	background-color: rgba(0, 0, 0, 0.85);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: none;
+}
+.view-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 480px;
+	height: 600px;
+	background-color: #fff;
+	padding: 30px 10px 70px 10px;
+	border-radius: 4px;
+}
+.view-content h1 {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+.view-content iframe {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.close-content {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 26px;
+	height: 26px;
+}
+.close-content:after {
+	content: '\F659';
+	font-family: bootstrap-icons;
+	font-size: 20px;
+}
+/* Footer */
+footer {
+	height: 430px;
+	background-color: #F7F8FA;
+}
+.footer-inner {
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+}
+.footer-link {
+	margin: auto;
+	width: 1280px;
+	height: 52px;
+	display: flex;
+	align-items: center;
+}
+.footer-policy {
+	flex: 1;
+}
+.footer-policy a {
+	padding: 5px;
+}
+.footer-policy a,
+.footer-sns a {
+	font-size: 14px;
+	color: #5f6773;	
+}
+.footer-policy a:nth-child(2) {
+	font-weight: 400;
+}
+.footer-policy a:after {
+	content: '|';
+	position: absolute;
+	margin-left: 5px;
+}
+.footer-policy a:last-child:after {
+	display: none;
+}
+.footer-sns {
+	margin-left: auto;
+}
+.footer-sns a img {
+	vertical-align: middle;
+	padding: 0 4px 0 8px;
+	width: 38px;
+}
+.footer-sns a span {}
+.footer-detail {
+	width: 1280px;
+	height: 52px;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	gap: 50px;
+}
+.footer-detail > div {}
+.company-detail {
+	flex: 2;
+}
+.company-detail h2,
+.service h2 {
+	font-weight: 500;
+}
+.company-detail p,
+.company-detail span,
+.company-detail a,
+.service p,
+.service p b {
+	font-size: 14px;
+	color: #5f6773;
+}
+.company-detail span,
+.service p b {
+	font-weight: 600;
+}
+.company-detail a {
+	text-decoration: underline;
+}
+.service {
+	flex: 1;
+}
+.service p:nth-of-type(1) {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.service p:not(:nth-of-type(1)) {
+	padding: 0;
+	margin: 0;
+}
+.service p b {
+	margin-right: 8px;
+}
+.service p a:hover {
+	text-decoration: underline;
+}

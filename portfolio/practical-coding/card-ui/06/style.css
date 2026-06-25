@@ -1,0 +1,96 @@
+/* Remixicon CDN */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+/* Cummon CSS */
+.grid-frame b {
+  color: #99C9EF;
+  font-weight: normal;
+}
+.grid-frame em {
+  font-size: 24px;
+  font-style: normal;
+  margin-top: 20px;
+}
+.grid-frame i {
+  font-size: 70px;
+}
+/* Mondrian Layout CSS */
+body {
+  font-size: 28px;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: #171717;
+}
+.grid-frame {
+  width: 700px;
+  height: 700px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-frame div {
+  border-radius: 10px;
+  display: grid;
+  align-content: center;
+  background-color: #0078D7;
+  color: #fff;
+  padding: 20px;
+}
+.grid-frame div:nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+}
+.grid-frame div:nth-child(1) i {
+  font-size: 40px;
+}
+.grid-frame div:nth-child(2) {
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 2;
+}
+.grid-frame div:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+.grid-frame div:nth-child(3) i {
+  text-align: center;
+}
+.grid-frame div:nth-child(4) {
+  background-color: #D13438;
+}
+.grid-frame div:nth-child(6) {
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 2;
+  background: url('images/frame-01.jpg') no-repeat center right;
+  background-size: cover;
+}
+.grid-frame div:nth-child(6) em {
+  margin-top: 160px;
+}
+.grid-frame div:nth-child(7) {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 2;
+  text-align: center;
+}
+.grid-frame div:nth-child(7) i {
+  margin-top: 40px;
+}
+.grid-frame div:nth-child(7) p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.grid-frame div:nth-child(7) s {
+  text-decoration: none;
+}
+.grid-frame div:nth-child(9) {
+  background: url('images/frame-02.jpg') no-repeat center left -43px;
+  background-size: cover;
+}
+.grid-frame div:nth-child(11) {
+  background-color: #5EA6DB;
+}
+

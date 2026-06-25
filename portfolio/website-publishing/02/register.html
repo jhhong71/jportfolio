@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moia Seoul</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <!-- Custom CSS $ JS -->
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/custom.js"></script>
+</head>
+<body>
+
+  
+  <div class="container">
+    <!-- Header -->
+    <div class="header-include"></div>
+    <!-- Section : Join-us -->
+    <section class="joinus">
+      <h1>Join Us</h1>
+      <div class="signin-form">
+        <div class="field">
+          <span>ID<em>*</em></span>
+          <input type="text" placeholder="아이디 입력">
+        </div>
+        <div class="field">
+          <span>E-mail<em>*</em></span>
+          <input type="email" placeholder="이메일 입력">
+        </div>
+        <div class="field">
+          <span>Password<em>*</em></span>
+          <input type="password" placeholder="비밀번호 입력">
+          <input type="password" placeholder="비밀번호 재입력">
+        </div>
+        <div class="field">
+          <span>Phone Number<em>*</em></span>
+          <div class="field num">
+            <input type="text" placeholder="010">
+            <input type="text" placeholder="0000">
+            <input type="text" placeholder="0000">
+            <button>인증요청</button>
+          </div>
+        </div>
+        <div class="field">
+          <span>Date of birth</span>
+          <div class="field birth">
+            <input type="date">
+          </div>
+          <p>
+            생년월일을 입력해주시면 <b>회원가입 쿠폰</b>이 지급됩니다.
+          </p>
+        </div>
+        <div class="field">
+          <span>Referral Code</span>
+          <input type="text" placeholder="추천인 코드 입력 (선택)">
+          <p>
+            추천인 코드를 입력하시면, 친구초대 포인트가 지급됩니다.
+          </p>
+        </div>
+        <div class="field agree">
+          <div class="agree-title">
+            <label style="cursor: pointer;"><input id="chkAll" type="checkbox" name="chkAll"><i></i><span>약관 모두 동의</span></label>
+          </div>
+          <div class="agree-subtitle">
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>만 14세 이상입니다 <em>(필수)</em></label>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>Moia(모이아) 약관 동의 <em>(필수)</em></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>개인정보수집 및 이용에 대한 안내 <em>(필수)</em></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>개인정보수집 및 이용에 대한 안내 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>이벤트/마케팅 수신 동의 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>야간 혜택 알림 수신 동의 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+          </div>
+          <button class="btn-submit">가입하기</button>
+        </div>
+        <div class="view-contents">
+          <div class="view-content">
+            <h1>이용약관</h1>
+            <iframe src="policy.html" frameborder="0"></iframe>
+            <div class="close-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-include"></div>
+
+  </div>
+
+  
+</body>
+</html>

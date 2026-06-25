@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card Dark Mode</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style-light-dark-change.css">
+</head>
+<body>
+  
+  <div class="frame">
+    <div class="profile">
+      <div class="face">
+        <img src="images/profile.jpg">
+        <i class="bi bi-check"></i>
+      </div>
+      <h1>Jinhee Hong<span>Web Publisher & UI/UX Designer</span></h1>
+      <p>
+        I'm a web publisher, JinHee Hong. <br> I'm looking forward to a good project.<span>amywine0701@naver.com</span>
+      </p>
+      <a href="#none" class="view-portfolio">View My Portfolio</a>
+      <div class="sns">
+        <div>
+          <i class="bi bi-instagram"></i>
+          <span><b>10.1k</b>followers</span>
+        </div>
+        <div>
+          <i class="bi bi-facebook"></i>
+          <span><b>11.9k</b>followers</span>
+        </div>
+        <div>
+          <i class="bi bi-youtube"></i>
+          <span><b>10.2k</b>followers</span>
+        </div>
+      </div>
+      <div class="btn-mode"></div>
+      <div class="like-more">
+        <span class="btn-like"></span>
+        <span class="btn-more">
+          <i class="xi-ellipsis-v"></i>          
+        </span>
+      </div>
+    </div>
+  </div> 
+
+  <script>
+    $('.btn-mode').click(function(){
+      $('.profile, body').toggleClass('dark')
+    })
+    $('.btn-like').click(function(){
+      $(this).toggleClass('active')
+    })
+  </script>
+  
+</body>
+</html>

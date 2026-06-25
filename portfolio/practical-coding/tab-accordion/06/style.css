@@ -1,0 +1,135 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Fullscreen Tabmenu Slide */
+.tab-inner {
+    position: relative;
+}
+.tabs {
+  overflow: hidden;
+}
+.items {
+  width: 300%;
+  transition: 0.5s;
+}
+.item {
+  width: 33.333%;
+  height: 100vh;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  position: relative;
+  float: left;
+}
+.item .heading {
+  margin: 0;
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  line-height: 1.2em;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  margin-top: -100px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+.item .heading h1 {
+  line-height: 1.2em;
+}
+.item .heading p {
+  font-size: 16px;
+  font-weight: 200;
+}
+.item .heading p b {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.item:nth-child(1) {
+  background-image: url('images/slide01.jpg');
+}
+.item:nth-child(2) {
+  background-image: url('images/slide02.jpg');
+}
+.item:nth-child(3) {
+  background-image: url('images/slide03.jpg');
+}
+.item:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #0A0A0A, transparent);
+}
+.btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+  margin-left: -3px;
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+/* Checked Function */
+input[name=tabmenu] {
+  display: none;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  text-decoration: underline;
+}
+input[id=tab1]:checked ~ .tabs .items {
+  margin-left: 0;
+}
+input[id=tab2]:checked ~ .tabs .items {
+  margin-left: -100%;
+}
+input[id=tab3]:checked ~ .tabs .items {
+  margin-left: -200%;
+}
+input[id=tab1]:checked ~ .tabs .items .item:nth-child(1) .heading {
+  margin-top: 0;
+  opacity: 1;
+}
+input[id=tab2]:checked ~ .tabs .items .item:nth-child(2) .heading {
+  margin-top: 0;
+  opacity: 1;
+}
+input[id=tab3]:checked ~ .tabs .items .item:nth-child(3) .heading {
+  margin-top: 0;
+  opacity: 1;
+}
+

@@ -1,0 +1,103 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Remixicon CDN */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+/* Default CSS */
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #222;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.4em;
+	margin: 0;
+  height: 100vh;
+  position: relative;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* UIkit Accordion Custom CSS */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  display: block;
+  width: 250px;
+  margin: 30px auto;
+}
+.accordion {
+  width: 600px;
+}
+.accordion .uk-accordion-title {
+  padding: 10px 10px 10px 20px;
+  margin: 0 0 -4px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.accordion .uk-accordion-content {
+  padding: 20px;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+}
+.accordion li:nth-of-type(1) .uk-accordion-title,
+.accordion li:nth-of-type(3) .uk-accordion-title {
+  background-color: #CF152D;
+  color: #fff;
+}
+.accordion li:nth-of-type(1) .uk-accordion-content,
+.accordion li:nth-of-type(3) .uk-accordion-content {
+  background-color: #ffeaed;
+}
+.accordion li:nth-of-type(2) .uk-accordion-title,
+.accordion li:nth-of-type(4) .uk-accordion-title {
+  background-color: #ED7422;
+  color: #fff;
+}
+.accordion li:nth-of-type(2) .uk-accordion-content,
+.accordion li:nth-of-type(4) .uk-accordion-content {
+  background-color: #fff5ef;
+}
+.accordion .uk-accordion-title::before {
+  background: none;
+  content: '\ea4e';
+  font-family: remixicon;
+}
+.accordion .uk-open>.uk-accordion-title::before {
+  background: none;
+  content: '\ea78';
+}
+.accordion .uk-open>.uk-accordion-content {
+  position: relative;
+}
+.accordion .uk-open:nth-of-type(1)>.uk-accordion-content:after, 
+.accordion .uk-open:nth-of-type(3)>.uk-accordion-content:after {
+  content: '';
+  background-color: #CF152D;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -7px;
+  left: 20px;
+  z-index: 100;
+}
+.accordion .uk-open:nth-of-type(2)>.uk-accordion-content:after, 
+.accordion .uk-open:nth-of-type(4)>.uk-accordion-content:after {
+  content: '';
+  background-color: #ED7422;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -8px;
+  left: 20px;
+  z-index: 100;
+}

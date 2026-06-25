@@ -1,0 +1,67 @@
+/* FontAwesome 4.7 CDN */
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.loading span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	animation: dot 1.5s linear infinite;
+}
+.loading span:nth-child(1) {
+	background-color: #A52A2B;
+	animation-delay: 0.3s;
+}
+.loading span:nth-child(2) {
+	background-color: red;
+	animation-delay: 0.6s;
+}
+.loading span:nth-child(3) {
+	background-color: #FFD701;
+	animation-delay: 0.9s;
+}
+.loading span:nth-child(4) {
+	background-color: #010080;
+	animation-delay: 1.2s;
+}
+.loading span:nth-child(5) {
+	background-color: #000;
+}
+.loading .fa {
+	color: gray;
+	position: absolute;
+	transform: rotate(45deg);
+	top: 5px;
+	left: -20px;
+	animation: airplane 1.8s linear infinite;
+}
+
+@keyframes dot {
+	0% {
+		opacity: 0;
+		transform: scale(0.2);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 0;	
+		transform: scale(0.5);
+	}
+}
+@keyframes airplane {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}

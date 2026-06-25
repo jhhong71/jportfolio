@@ -1,0 +1,100 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Bootstrp Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.6em;
+  font-weight: 300;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Netflix FAQ with jQery */
+.faq {
+  margin-top: 100px;
+  height: 100px;
+  position: relative;
+}
+.faq-inner {
+  width: 730px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+}
+.accordion {
+  font-size: 22px;
+}
+.accordion .title,
+.accordion .content {
+  background-color: #303030;
+  padding: 10px 20px;
+}
+.accordion .title {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.accordion .title.active {
+  background-color: crimson;
+}
+.accordion .title:after {
+  content: '\F64D';
+  font-family: bootstrap-icons;
+  float: right;
+}
+.accordion .title.active:after {
+  transform: rotate(45deg);
+}
+.accordion .content {
+  margin-bottom: 10px;
+  display: none;
+}
+.newsletter {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+.newsletter div {
+  display: flex;
+}
+.newsletter div * {
+  border: none;
+  outline: none;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.newsletter div input[type=email] {
+  flex: 3;
+  padding-left: 14px;
+}
+.newsletter div button {
+  background-color: #e84118;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+}
+.newsletter div button:after {
+  content: '\F285';
+  font-family: bootstrap-icons;
+  padding-left: 4px;
+  display: inline-block;
+  transform: translateY(2px);
+}
+

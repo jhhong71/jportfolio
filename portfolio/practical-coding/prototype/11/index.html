@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRANDI SIGNIN FORM</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="container">
+    <header>
+      <a href="#none" class="banner"><img src="images/banner.jpg" alt="banner"></a>
+      <div class="header-inner">
+        <div class="navi">
+          <a href="#none" class="header-logo"><img src="images/brandi-logo.svg" alt="brandi-logo"></a>
+          <div class="search">
+            <input type="text"><i class="bi bi-search"></i>
+          </div>
+          <div class="mypage">
+            <a href="#none"><i class="bi bi-cart-check"></i></a>
+            <a href="#none"><i class="bi bi-heart"></i></a>
+            <a href="#none"><i data-status="OFF" class="bi bi-person"></i></a>
+          </div>
+        </div>
+        <gnb>
+          <a href="#none">홈</a>
+          <a href="#none">카테고리</a>
+          <a href="#none">하루배송</a>
+          <a href="#none">혜택존</a>
+          <a href="#none">베스트</a>
+          <a href="#none">신상<em>5% 할인</em></a>
+          <a href="#none">특가</a>
+          <a href="#none">스토어</a>
+        </gnb>
+      </div>
+    </header>
+    <section>
+      <div class="signin-header">
+        <h1>가입을 시작합니다!</h1>
+        <p>
+          브랜디 계정 하나로 브랜디, 하이버, 플레어 서비스를 모두 이용할 수 있어요.
+        </p>
+      </div>
+      <div class="signin-form">
+        <div class="field">
+          <span>아이디<em>*</em></span>
+          <input type="text" placeholder="아이디 입력">
+        </div>
+        <div class="field">
+          <span>이메일<em>*</em></span>
+          <input type="email" placeholder="이메일 입력">
+        </div>
+        <div class="field">
+          <span>비밀번호<em>*</em></span>
+          <input type="password" placeholder="비밀번호 입력">
+          <input type="password" placeholder="비밀번호 재입력">
+        </div>
+        <div class="field">
+          <span>휴대폰 번호<em>*</em></span>
+          <div class="field num">
+            <input type="text" placeholder="010">
+            <input type="text" placeholder="0000">
+            <input type="text" placeholder="0000">
+            <button>인증요청</button>
+          </div>
+        </div>
+        <div class="field">
+          <span>생년월일</span>
+          <div class="field birth">
+            <select>
+              <option value="">년도</option>
+              <option value="">2008</option>
+              <option value="">2007</option>
+            </select>
+            <select>
+              <option value="">월</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+            <select>
+              <option value="">일</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <p>
+            생년월일을 입력해주시면 <b>회원가입 쿠폰</b>이 지급됩니다.
+          </p>
+        </div>
+        <div class="field">
+          <span>추천인 코드</span>
+          <input type="text" placeholder="추천인 코드 입력 (선택)">
+          <p>
+            추천인 코드를 입력하시면, 친구초대 포인트가 지급됩니다.
+          </p>
+        </div>
+        <div class="field agree">
+          <div class="agree-title">
+            <label style="cursor: pointer;"><input id="chkAll" type="checkbox" name="chkAll"><i></i><span>약관 모두 동의</span></label>
+          </div>
+          <div class="agree-subtitle">
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>만 14세 이상입니다 <em>(필수)</em></label>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>브랜디 약관 동의 <em>(필수)</em></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>개인정보수집 및 이용에 대한 안내 <em>(필수)</em></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>개인정보수집 및 이용에 대한 안내 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>이벤트/마케팅 수신 동의 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+            <div>
+              <label><input id="chk-agree" type="checkbox" name="chk"><i></i>야간 혜택 알림 수신 동의 <b>(선택)</b></label>
+              <a class="open-content" href="#none">내용보기</a>
+            </div>
+          </div>
+          <button class="btn-submit">가입하기</button>
+        </div>
+
+        <div class="view-contents">
+          <div class="view-content">
+            <h1>이용약관</h1>
+            <iframe src="policy.html" frameborder="0"></iframe>
+            <div class="close-content"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-link">
+          <div class="footer-policy">
+            <a href="#none">이용약관</a>
+            <a href="#none">개인정보처리방침</a>
+            <a href="#none">사업자정보확인</a>
+            <a href="#none">인재채용</a>
+            <a href="#none">입점문의</a>
+            <a href="#none">셀러어드민</a>
+          </div>
+          <div class="footer-sns">
+            <a href="#none"><img src="images/ic-faq.svg" alt="faq">자주묻는 질문</a>
+            <a href="#none"><img src="images/ic-kakaoplus.svg" alt="kakaoplus">플러스친구</a>
+            <a href="#none"><img src="images/ic-facebook.svg" alt="facebook">페이스북</a>
+            <a href="#none"><img src="images/ic-insta.svg" alt="instagram">인스타그램</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-detail">
+          <div class="company-detail">
+            <h2>(주)브랜디</h2>
+            <p>
+              대표이사 : 서정민 | 사업자등록번호 : 220-88-93187 | 통신판매업신고 : 2016-서울강남-00359<br>
+              호스팅사업자 : (주)브랜디 주소 : 서울 강남구 테헤란로38길 12 (역삼동)<br>
+              개인정보관리책임자 : 주현주(privacy@brandi.co.kr)<br>
+              브랜디는 통신판매중개자로서 통신판매 당사자가 아니며, 판매자가 등록한 상품정보 및 거래에 브랜디는 책임을 지지 않습니다.
+            </p>
+            <span>안전거래센터 </span><a href="#none">신고하기</a>
+          </div>
+          <div class="service">
+            <h2>고객센터 1566-6575</h2>
+            <p><b>영업시간 </b>AM 10:00 ~ PM 17:00 (주말 및 공휴일 휴무)</p>
+            <p><b>점심시간 </b>PM 12:30 ~ PM 13:30</p>
+            <p><b>고객문의 </b><a href="#none">brandics@brandi.co.kr</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('#chkAll').click(function() {
+        if($('#chkAll').is(':checked')) $('input[name=chk]').prop('checked', true); //chkAll을 클릭했을 때, chkAll이 체크되어있다면 input[name=chk]를 전부 true로 해준다, prop는 checked로 속성을 변경해주는 메서드
+        else $('input[name=chk]').prop('checked', false); 
+      });
+    
+      $('input[name=chk]').click(function() {
+        var total = $('input[name=chk]').length; //갯수
+        var checked = $('input[name=chk]:checked').length; //갯수
+        
+        if(total != checked) $('#chkAll').prop('checked', false); //!= 비교연산자 즉, total과 checked가 같지 않다면, false
+        else $('#chkAll').prop('checked', true); 
+      });
+
+      $('.open-content').click(function(){
+        $('.view-contents').fadeIn()
+      })
+      $('.close-content').click(function(){
+        $('.view-contents').fadeOut()
+      })
+    });
+
+  </script>
+
+  
+</body>
+</html>

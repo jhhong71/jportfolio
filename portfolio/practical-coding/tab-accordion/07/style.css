@@ -1,0 +1,117 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Remixicon CDN */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  color: #75675C;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  background: #F8FAF0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Fancy JQuery Accordion */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.faq {
+  background-color: #FFBA00;
+  box-shadow: 0 10px 10px hsla(44, 34%, 34%, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  width: 340px;
+}
+.faq h2 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.faq h2 span {
+  color: #FC6719;
+  font-weight: 600;
+}
+.faq h2 em {
+  color: #E21683;
+  font-weight: 600;
+}
+.faq > em {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  display: block;
+  font-size: 23px;
+  margin: 0 0 20px 0
+}
+.accordion-inner {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.accordion-inner .title,
+.accordion-inner .content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 24px;
+}
+.accordion-inner .title {
+  color: #FF9C00;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.accordion-inner .title:after {
+  content: '\ea78';
+  font-family: remixicon;
+  font-weight: 600;
+  float: right;
+  border: 1px solid #FF9C00;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.accordion-inner .title.active:after {
+  transform: rotate(180deg);
+}
+.accordion-inner .content {
+  display: none;
+}
+.sub-title {
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sub-title:last-child {
+  border-bottom: none;
+}
+.sub-title b {
+  float: left;
+  font-weight: normal;
+  line-height: 32px;  
+}
+.sub-title button {
+  float: right;
+  border: none;
+  background-color: #FC6719;
+  width: 58px;
+  height: 32px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}

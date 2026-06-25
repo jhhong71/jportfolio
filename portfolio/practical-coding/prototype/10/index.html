@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Landing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="video-frame">
+      <video src="images/video-paris.mp4" autoplay muted loop poster="images/placeholder-paris.jpg"></video>
+    </div>
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
+  </div>
+  <div class="heading">
+      <h1><span>My Little Paris</span>La vie Parisienne</h1>
+    <p><em>파리지앵이 되는 것은 파리에서 태어나는 것이 아니라, 파리에서 다시 태어나는 것이다.</em> <br>서랍 속 깊숙히 넣어 놓은 어린 시절의 장난감처럼, 마음속에 늘 간직하고 싶은 도시, 파리. <br>어느날 문득 떠올릴 때, 행복을 느끼게 해주는 '나만의 작은 세상'이기를.</p>
+      <a class="btn-program" href="#none">프로그램소개</a>
+      <a class="btn-review" href="#none">시청소감</a>
+  </div>
+  <div class="aniversary">
+      <em>anniversary</em><span>15</span>
+  </div>
+  <div class="trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <div class="modal">
+    <div class="gnb">
+      <a href="#none">세계테마기행</a>
+      <a href="#none">한국기행</a>
+      <a href="#none">맛터사이클 다이어리</a>
+      <a href="#none">아주 각별한 기행</a>
+      <a href="#none">한국의 둘레길</a>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+    $('.trigger').click(function(){
+      $(this).toggleClass('active')
+      $('.aniversary').toggleClass('active')
+      $('.modal').fadeToggle()
+    })
+  </script>
+  
+</body>
+</html>

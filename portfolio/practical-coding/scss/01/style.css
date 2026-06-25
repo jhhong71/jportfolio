@@ -1,0 +1,156 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Box icons CDN */
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: boxicons;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Login UI */
+.login {
+  border-radius: 20px;
+  width: 360px;
+  padding: 40px;
+  background: #fff url("images/bg.png") no-repeat top -190px center;
+  background-size: cover;
+  padding-top: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.login h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.login .field {
+  margin: 20px 0;
+  position: relative;
+}
+.login .field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 7px;
+  padding-left: 34px;
+}
+.login .field input:focus {
+  border-bottom: 1px solid #A6C706;
+}
+.login .field input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.login .field input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.login .field input:focus::placeholder {
+  opacity: 0;
+}
+.login .field input:focus + i {
+  color: #A6C706;
+}
+.login .field i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 1.2em;
+  color: #999;
+}
+.login .status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login .status a:hover {
+  text-decoration: underline;
+}
+.login .status input[type=checkbox] {
+  display: none;
+}
+.login .status input[type=checkbox] + em {
+  transform: translateY(4px);
+  background: url("images/icon-chk.png") no-repeat center center;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  background-position: left;
+}
+.login .status input[type=checkbox]:checked + em {
+  background-position: right;
+}
+.login .btn-login {
+  display: block;
+  background-color: #A6C706;
+  border: none;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  padding: 8px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: auto;
+}
+.login .or {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+.login .or:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 42%;
+  height: 1px;
+  background-color: #ddd;
+}
+.login .or:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 42%;
+  height: 1px;
+  background-color: #ddd;
+}
+.login > a {
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+  color: #A6C706;
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.login > a:hover {
+  text-decoration: none;
+}

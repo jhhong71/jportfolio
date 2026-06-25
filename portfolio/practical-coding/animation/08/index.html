@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Icon Rotate Color</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+    /* Remixicon CDN */
+    @import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #000;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .icon-frame {
+      display: flex;
+      gap: 20px;
+    }
+    .icon-frame i {
+      color: #fff;
+      font-size: 6em;
+      animation: loading 3s linear infinite;
+    }
+    .icon-frame i:nth-child(1) {
+      text-shadow: 0 0 30px crimson,
+                   0 0 60px crimson,
+                   0 0 90px crimson,
+                   0 0 120px crimson;
+    }
+    .icon-frame i:nth-child(2) {
+      text-shadow: 0 0 30px royalblue,
+                   0 0 60px royalblue,
+                   0 0 90px royalblue,
+                   0 0 120px royalblue;
+    }
+    .icon-frame i:nth-child(3) {
+      text-shadow: 0 0 30px yellowgreen,
+                   0 0 60px yellowgreen,
+                   0 0 90px yellowgreen,
+                   0 0 120px yellowgreen;
+    }
+    .icon-frame i:nth-child(4) {
+      text-shadow: 0 0 30px gold,
+                   0 0 60px gold,
+                   0 0 90px gold,
+                   0 0 120px gold;
+    }
+    .icon-frame i:nth-child(5) {
+      text-shadow: 0 0 30px palevioletred,
+                   0 0 60px palevioletred,
+                   0 0 90px palevioletred,
+                   0 0 120px palevioletred;
+    }
+    @keyframes loading {
+      0% {
+        filter: hue-rotate(0);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon-frame">
+    <i class="ri-chrome-fill"></i>
+    <i class="ri-edge-fill"></i>
+    <i class="ri-firefox-fill"></i>
+    <i class="ri-safari-fill"></i>
+    <i class="ri-opera-fill"></i>
+  </div>
+  
+
+  
+</body>
+</html>

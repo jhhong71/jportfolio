@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>UIkit Modal</title>
+  <!-- UIkit CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a href="#modal-sns" class="btn-open" uk-toggle>Find your Friends</a>
+
+  <div id="modal-sns" uk-modal="esc-close: false; bg-close: false">
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-body">
+        <div>
+          <h4>Add to your Close Friends List</h4>
+          <p>
+            You may not always want to share with everyone who follows you. You can create a list of close friends and choose to share your story with only them. <em>How it works.</em>
+          </p>
+          <span>Search friends</span>
+          <div class="field-search">
+            <input type="search" placeholder="Search Friends">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+        <div uk-alert class="uk-alert-primary">
+          <a class="uk-alert-close" uk-close></a>
+          <img src="images/pic-01.png">
+          <a class="person-info" href="#none">Rachel Anne McAdams <span>rachelanne@gmail.com</span></a>
+        </div>
+        <div uk-alert class="uk-alert-primary">
+          <a class="uk-alert-close" uk-close></a>
+          <img src="images/pic-02.png">
+          <a class="person-info" href="#none">Nicholas Caradoc Hoult <span>nicholascaradoc@gmail.com</span></a>
+        </div>
+        <div uk-alert class="uk-alert-primary">
+          <a class="uk-alert-close" uk-close></a>
+          <img src="images/pic-03.png">
+          <a class="person-info" href="#none">Shia LaBeouf <span>shialabeouf@gmail.com</span></a>
+        </div>
+
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    UIkit.modal('#modal-sns').show();
+  </script>
+
+
+</body>
+
+</html>

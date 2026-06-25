@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moia Seoul</title>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <!-- Custom CSS $ JS -->
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/custom.js"></script>
+</head>
+<body>
+
+  
+  <div class="container">
+    <!-- Header -->
+    <div class="header-include"></div>
+    <!-- Section : Welcome -->
+    <section class="welcome">
+      <div class="welcome-inner">
+        <div class="welcome-tab-inner">
+          <input type="radio" name="slidemenu" id="slide1" checked>
+          <input type="radio" name="slidemenu" id="slide2">
+          <input type="radio" name="slidemenu" id="slide3">
+          <div class="welcome-tabs">
+            <div class="welcome-tab">
+              <a href="#none">
+                <img src="images/welcome-01.jpg" alt="welcome-img-01">
+              </a>
+              <a href="#none">
+                <img src="images/welcome-02.jpg" alt="welcome-img-02">
+              </a>
+              <a href="#none">
+                <img src="images/welcome-03.jpg" alt="welcome-img-03">
+              </a>
+            </div>
+          </div>
+          <div class="welcome-btn">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Intro -->
+    <section class="intro">
+      <div class="section-inner">
+        <div class="intro-items">
+          <div class="intro-item">
+            <a href="#none">
+              <div class="intro-img"></div>
+              <p>Membership Benefits</p>
+            </a>
+          </div>
+          <div class="intro-item">
+            <a href="#none">
+              <div class="intro-img"></div>
+              <p>Summer Sale</p>
+            </a>
+          </div>
+          <div class="intro-item">
+            <a href="#none">
+              <div class="intro-img"></div>
+              <p>Shoroom 10%</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Weekly Best -->
+    <section class="weekly-best">
+      <div class="section-inner">
+        <h3 class="section-headline">WEEKLY BEST</h3>
+        <div class="weekly-best-tabs">
+          <div class="weekly-best-btn">
+            <a href="#none" class="active" data-text="tab1">OUTER</a>
+            <a href="#none" data-text="tab2">TOPS</a>
+            <a href="#none" data-text="tab3">BOTTOMS</a>
+            <a href="#none" data-text="tab4">OPS</a>
+            <a href="#none" data-text="tab5">ACC</a>
+          </div>
+          <div class="weekly-best-items">
+            <div class="weekly-best-item active" id="tab1">
+              <a href="product.html" class="weekly-best-pic">
+                <img src="images/weekly-best-outer-01.jpg" alt="outer-01">
+                <div class="weekly-caption">
+                  <p>eco cardigan (ivory)</p>
+                  <em>139,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-outer-02.jpg" alt="outer-02">
+                <div class="weekly-caption">
+                  <p>walnut cardigan (sand)</p>
+                  <em>127,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-outer-03.jpg" alt="outer-03">
+                <div class="weekly-caption">
+                  <p>v-double jacket (beige)</p>
+                  <em>273,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-outer-04.jpg" alt="outer-04">
+                <div class="weekly-caption">
+                  <p>hur trench coat (beige)</p>
+                  <em>349,000</em>
+                </div>
+              </a>
+            </div>
+            <div class="weekly-best-item" id="tab2">
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-top-01.jpg" alt="top-01">
+                <div class="weekly-caption">
+                  <p>raglan shirt (cream)</p>
+                  <em>159,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-top-02.jpg" alt="top-02">
+                <div class="weekly-caption">
+                  <p>stripe shirt (brown stripe)</p>
+                  <em>163,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-top-03.jpg" alt="top-03">
+                <div class="weekly-caption">
+                  <p>mandarin wrap shirt (beige)</p>
+                  <em>152,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-top-01.jpg" alt="top-04">
+                <div class="weekly-caption">
+                  <p>raglan shirt (cream)</p>
+                  <em>159,000</em>
+                </div>
+              </a>
+            </div>
+            <div class="weekly-best-item" id="tab3">
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-bottom-01.jpg" alt="bottom-01">
+                <div class="weekly-caption">
+                  <p>turn up trouser (beige)</p>
+                  <em>174,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-bottom-02.jpg" alt="bottom-02">
+                <div class="weekly-caption">
+                  <p>linco pants (khaki)</p>
+                  <em>128,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-bottom-03.jpg" alt="bottom-03">
+                <div class="weekly-caption">
+                  <p>half wide pants (black)</p>
+                  <em>139,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-bottom-04.jpg" alt="bottom-04">
+                <div class="weekly-caption">
+                  <p>linen pleats skirt (beige)</p>
+                  <em>163,000</em>
+                </div>
+              </a>
+            </div>
+            <div class="weekly-best-item" id="tab4">
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-ops-01.jpg" alt="ops-01">
+                <div class="weekly-caption">
+                  <p>halter slit dress (ivory)</p>
+                  <em>209,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-ops-02.jpg" alt="ops-02">
+                <div class="weekly-caption">
+                  <p>halter slit dress (navy)</p>
+                  <em>209,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-ops-03.jpg" alt="ops-03">
+                <div class="weekly-caption">
+                  <p>linen robe (multi color)</p>
+                  <em>218,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-ops-04.jpg" alt="ops-04">
+                <div class="weekly-caption">
+                  <p>linen robe (ivory)</p>
+                  <em>218,000</em>
+                </div>
+              </a>
+            </div>
+            <div class="weekly-best-item" id="tab5">
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-acc-01.jpg" alt="acc-01">
+                <div class="weekly-caption">
+                  <p>marte knit bag (black)</p>
+                  <em>87,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-acc-02.jpg" alt="acc-02">
+                <div class="weekly-caption">
+                  <p>warm muffler (4colors)</p>
+                  <em>76,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-acc-03.jpg" alt="acc-03">
+                <div class="weekly-caption">
+                  <p>cube bag (etoffe)</p>
+                  <em>289,000</em>
+                </div>
+              </a>
+              <a href="#none" class="weekly-best-pic">
+                <img src="images/weekly-best-acc-04.jpg" alt="acc-04">
+                <div class="weekly-caption">
+                  <p>plain sandal (cream)</p>
+                  <em>168,000</em>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : New Arrivals -->
+    <section class="new-arrivals">
+      <div class="section-inner">
+        <h3 class="section-headline">NEW ARRIVALS</h3>
+        <div class="new-arrivals-items">
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-01.jpg" alt="new-arrivals-01">
+              <img src="images/new-arrivals-01-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="brown color"></span>
+              <span class="black color"></span>
+              <p>paper knit vest</p>
+              <del>112,000</del>
+              <b>107,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-02.jpg" alt="new-arrivals-02">
+              <img src="images/new-arrivals-02-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <p>barrel skirt (bone)</p>
+              <del>199,000</del>
+              <b>159,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-03.jpg" alt="new-arrivals-03">
+              <img src="images/new-arrivals-03-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <p>round trench coat (cream)</p>
+              <del>364,000</del>
+              <b>297,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-04.jpg" alt="new-arrivals-04">
+              <img src="images/new-arrivals-04-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <span class="black color"></span>
+              <p>hur trench coat</p>
+              <del>460,000</del>
+              <b>349,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+        </div>
+        <div class="new-arrivals-items">
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-05.jpg" alt="new-arrivals-05">
+              <img src="images/new-arrivals-05-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <span class="brown color"></span>
+              <p>raglan eco knit</p>
+              <del>121,000</del>
+              <b>119,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+              <span class="tag-plus">1+1</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-06.jpg" alt="new-arrivals-06">
+              <img src="images/new-arrivals-06-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="skyblue color"></span>
+              <p>box shirt (babyblue stripe)</p>
+              <del>199,000</del>
+              <b>158,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-07.jpg" alt="new-arrivals-07">
+              <img src="images/new-arrivals-07-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="black color"></span>
+              <span class="brown color"></span>
+              <p>linco pants</p>
+              <del>310,000</del>
+              <b>152,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-08.jpg" alt="new-arrivals-08">
+              <img src="images/new-arrivals-08-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <p>mandarin wrap shirt (indie brown)</p>
+              <del>182,000</del>
+              <b>152,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+        </div>
+        <div class="new-arrivals-items arrival-more">
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-09.jpg" alt="new-arrivals-09">
+              <img src="images/new-arrivals-09-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="brown color"></span>
+              <p>paper knit vest</p>
+              <del>112,000</del>
+              <b>107,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-10.jpg" alt="new-arrivals-10">
+              <img src="images/new-arrivals-10-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="white color"></span>
+              <p>box t-shirt</p>
+              <del>59,000</del>
+              <b>49,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-11.jpg" alt="new-arrivals-11">
+              <img src="images/new-arrivals-11-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="brown color"></span>
+              <span class="black color"></span>
+              <p>eco cardigan (khaki)</p>
+              <del>150,000</del>
+              <b>139,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+            </div>
+          </div>
+          <div class="new-arrivals-item">
+            <a href="#none" class="new-arrivals-pic">
+              <img src="images/new-arrivals-12.jpg" alt="new-arrivals-12">
+              <img src="images/new-arrivals-12-hover.jpg" alt="new-arrivals-01-hover">
+            </a>
+            <div class="info">
+              <span class="ivory color"></span>
+              <span class="black color"></span>
+              <p>round jacket</p>
+              <del>283,000</del>
+              <b>247,000</b>
+              <span class="tag-best">BEST</span>
+              <span class="tag-sale">SALE</span>
+              <span class="tag-plus">1+1</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-common">
+          <a href="#none" class="btn-more">MORE VIEW</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Review -->
+    <section class="review">
+      <div class="section-inner">
+        <h3 class="section-headline">REVIEW</h3>
+        <div class="review-slider">
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-01.jpg" alt="review-01">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  이렇게 하나만 잠궈도 되는 건지는 처음 알았습니다. 너무 예뻐요. 만족합니다.
+                </p>
+                <em>nyamo***</em>
+                <b>2022. 05. 24</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-01-thumbnail.jpg" alt="review-01-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">[1st] box linen shirt (indigo)</a>
+                  <div>
+                    <span>리뷰 70</span>
+                    <span>평점 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-02.jpg" alt="review-02">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  교복처럼 입어요~ 핏이 정말 예뻐요! 보풀? 그게 뭔가요
+                </p>
+                <em>bak9***</em>
+                <b>2022. 05. 25</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-02-thumbnail.jpg" alt="review-02-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">[1st] eco cardigan (ivory)</a>
+                  <div>
+                    <span>리뷰 230</span>
+                    <span>평점 4.9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-03.jpg" alt="review-03">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  편하게 입을수 있어서 좋아요. 다른 색상도 구매할까봐요.
+                </p>
+                <em>leehya***</em>
+                <b>2022. 05. 25</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-03-thumbnail.jpg" alt="review-03-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">[1st] box t-shirt (stone blue)</a>
+                  <div>
+                    <span>리뷰 160</span>
+                    <span>평점 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-04.jpg" alt="review-04">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  S사이즈 주문했고, 165기준 길이나 허리 다 딱 맞습니다.
+                </p>
+                <em>halis***</em>
+                <b>2022. 05. 26</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-04-thumbnail.jpg" alt="review-04-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">string trouser (black)</a>
+                  <div>
+                    <span>리뷰 35</span>
+                    <span>평점 4.8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-05.jpeg" alt="review-05">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  한 여름에도 반팔은 잘 안입어서 여름에 잘 입을거 같아요 
+                </p>
+                <em>amer071***</em>
+                <b>2022. 05. 27</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-05-thumbnail.jpg" alt="review-05-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">[1st] box linen shirt (white)</a>
+                  <div>
+                    <span>리뷰 83</span>
+                    <span>평점 4.6</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-06.jpeg" alt="review-06">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  모이아 데님 믿고사는편이라 딱히 디테일확인안하고 그냥 구매했는데 역대 데님들중에사
+                </p>
+                <em>emwh12***</em>
+                <b>2022. 05. 27</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-06-thumbnail.jpg" alt="review-06-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">slit denim (light indigo)</a>
+                  <div>
+                    <span>리뷰 80</span>
+                    <span>평점 4.9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-07.jpeg" alt="review-07">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  예전에 산 박스티셔츠 보다는 톡톡한 두께감이에요. 차분한 베이지
+                </p>
+                <em>mwaga88***</em>
+                <b>2022. 05. 27</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-07-thumbnail.jpg" alt="review-07-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">washing t-shirt (beige)</a>
+                  <div>
+                    <span>리뷰 83</span>
+                    <span>평점 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <a href="#none">
+              <img src="images/review-08.jpg" alt="review-08">
+            </a>
+            <div class="review-desc">
+              <div class="review-title">
+                <p>
+                  다른 가디건 세뚜를 사서 주문하면서도 고민햇는데
+                </p>
+                <em>alive0702***</em>
+                <b>2022. 05. 27</b>
+              </div>
+              <div class="review-clothes">
+                <a href="#none">
+                  <img src="images/review-08-thumbnail.jpg" alt="review-08-thumbnail">
+                </a>
+                <div class="clothes-info">
+                  <a href="#none">eco cardigan (ivory)</a>
+                  <div>
+                    <span>리뷰 70</span>
+                    <span>평점 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Section : PRESS -->
+    <section class="press">
+      <div class="section-inner">
+        <h3 class="section-headline">PRESS</h3>
+        <div class="press-items">
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-01.jpg" alt="press01">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Soyoung Choi <br> knit boiero set_cream <br><br>[Instagram]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-02.jpg" alt="press02">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Yoon Seung Ah<br><br>
+                [TouTube '승아로운']
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-03.jpg" alt="press03">
+            </div>
+            <div class="press-caption">
+              <p>
+                Model. Jung Chung Sol<br>
+                raglan shirt_white<br><br>
+                [Instagram]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-04.jpg" alt="press04">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Jung Yu Mi<br>
+                wrap dress_white<br><br>
+                [Abib AD]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-05.jpg" alt="press05">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Lim Soo Jung<br>
+                v round blouse_natural<br>
+                knit top_khaki<br><br>
+                ['MELIXIR' V-log]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-06.jpg" alt="press06">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Krystal<br>
+                on button jacket_ivory<br><br>
+                [ELLE]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-07.jpg" alt="press07">
+            </div>
+            <div class="press-caption">
+              <p>
+                Singer. Jisoo<br>
+                one button jacket_check<br>
+                black half denim<br><br>
+                [Instagram & Airport style]
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-08.jpg" alt="press08">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Suzy<br>
+                box t-shirt_white<br><br>
+                [MV Epitone project 'first love']
+              </p>
+            </div>
+          </a>
+          <a href="#none" class="press-item">
+            <div class="press-pic">
+              <img src="images/press-09.jpg" alt="press09">
+            </div>
+            <div class="press-caption">
+              <p>
+                Actress. Han Ji Min<br>
+                spring jacket_check<br>
+                box t-shirt_deep gray<br><br>
+                [tvn 'Familliar Wife']
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="btn-common">
+          <a href="#none" class="btn-reservation">MORE VIEW</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section :  Showroom -->
+    <section class="showroom">
+      <div class="showroom-inner">
+        <a href="#none" class="showroom-pic">
+          <img src="images/showroom-img.jpg" alt="showroom">
+        </a>
+        <div class="showroom-desc">
+          <div class="showroom-desc-heading">
+            <h3>SHOWROOM</h3>
+            <p>
+              1F, 683-88, hannam-dong, yongsan-gu, seoul, korea <br>
+              wednesday to sunday 11am – 7pm <br>
+              closed on monday, tuesday
+            </p>
+            <div class="btn-common">
+              <a href="#none" class="btn-reservation">RESERVATION</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-include"></div>
+  </div>
+  
+  <a href="#" class="gototop"><i class="ri-arrow-up-s-line"></i></a>
+
+
+  
+</body>
+</html>
