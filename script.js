@@ -16,7 +16,7 @@
 
   const enterprise = [
     { img: "enterprise-afgcms.png", title: "어센틱 CMS", contrib: "100%", scope: "화면 퍼블리싱", work: "화면설계서 기획 및 수수료 화면 구현, 컴포넌트 퍼블리싱", stack: ["Dhtmlx", "jQuery", "JSP"], links: [] },
-    { img: "enterprise-afgerp.png", title: "어센틱 ERP", contrib: "100%", scope: "화면 퍼블리싱", work: "수수료 화면 구현 및 컴포넌트 퍼블리싱", stack: ["Dhtmlx", "jQuery", "JSP"], links: [] },
+    { img: "enterprise-afgerp.png", title: "어센틱 ERP", contrib: "100%", scope: "화면 퍼블리싱", work: "수수료 화면 구현 및 컴포넌트 퍼블리싱", stack: ["Dhtmlx", "jQuery", "JSP"], links: [{ t: "GitHub", u: "https://github.com/jhhong71/afg-erp-commission-dashboard", code: true }, { t: "Live Demo", u: "https://afg-erp-commission-dashboard.vercel.app/", solid: true }] },
     { img: "enterprise-thebest.png", title: "더베스트", contrib: "100%", scope: "화면 퍼블리싱", work: "수수료 화면 퍼블리싱 및 유지보수", stack: ["Dhtmlx", "jQuery", "JSP"], links: [] },
     { img: "enterprise-openhi.png", title: "오픈노하우", contrib: "100%", scope: "화면 퍼블리싱 및 프론트엔드 개발", work: "강의 결제 및 학습창 구현 및 메인, 상세 화면 개발", stack: ["Kendo UI", "jQuery", "JSP"], links: [] },
     { img: "enterprise-01.png", title: "SGA 데이터연계시스템", contrib: "100%", scope: "Vue.js 기반 화면 퍼블리싱", work: "폐쇄망 내에서 Vuetify · ag-Grid 활용 UI 구현", stack: ["Vue.js", "Vuetify", "ag-Grid"], links: [{ t: "GitHub", u: "https://github.com/jhhong71/lms-admin-project", code: true }, { t: "Live Demo", u: "https://lms-admin-project.vercel.app/", solid: true }] },
