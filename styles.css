@@ -1880,6 +1880,18 @@ h1, h2, h3, h4 { font-family: var(--font-display), var(--font-kr); }
 .clone-swiper .proj-card { border-color: var(--voxr-paper-border); }
 .clone-controls { display: flex; }
 
+/* ≤1300px: inset all container content with side padding, but let the
+   swiper carousels stay edge-to-edge by cancelling it with negative margins */
+@media (max-width: 1300px) {
+  .container { padding: 0 10px; }
+  .ent-swiper,
+  .clone-swiper,
+  .filter-tabs.swiper {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
 /* ≤468px: hide the navbar Contact button (still reachable via the menu) */
 @media (max-width: 468px) {
   .nav-actions .btn--solid { display: none; }
